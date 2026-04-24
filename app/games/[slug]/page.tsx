@@ -95,7 +95,7 @@ export default function GamePage({ params }: Props) {
 
         <div className="card overflow-hidden">
           <div className="grid md:grid-cols-[240px_1fr]">
-            <div className="aspect-square bg-gradient-to-br from-yellow-600 to-red-700 md:aspect-auto">
+            <div className={`${game.brand === 'pussy888' ? 'aspect-[229/457]' : 'aspect-square'} bg-gradient-to-br from-yellow-600 to-red-700 md:aspect-auto`}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={game.image} alt={game.name_en} className="h-full w-full object-cover" />
             </div>
@@ -191,7 +191,7 @@ export default function GamePage({ params }: Props) {
                   href={`/games/${r.id}/`}
                   className="group block overflow-hidden rounded-lg border border-[color:var(--border)] bg-black/30 transition hover:-translate-y-1 hover:border-[color:var(--gold)]"
                 >
-                  <div className="aspect-square overflow-hidden bg-[color:var(--bg-3)]">
+                  <div className={`${r.brand === 'pussy888' ? 'aspect-[229/457]' : 'aspect-square'} overflow-hidden bg-[color:var(--bg-3)]`}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={r.image}

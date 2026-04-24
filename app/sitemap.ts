@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ['/rtp/freespin/', 0.85, 'hourly'],
     ['/rtp/angpao/', 0.85, 'hourly'],
     ['/tips/', 0.8, 'weekly'],
+    ['/download/', 0.9, 'weekly'],
     ['/download/ios/', 0.9, 'weekly'],
     ['/about/', 0.6, 'monthly'],
     ['/blog/', 0.7, 'weekly'],

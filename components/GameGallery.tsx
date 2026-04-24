@@ -48,7 +48,7 @@ export default function GameGallery({ games }: { games: PoolGame[] }) {
             className="group relative overflow-hidden rounded-lg border border-[color:var(--border)] bg-black/30 transition hover:-translate-y-1 hover:border-[color:var(--gold)]"
           >
             <a href={SITE.ocs8SignupUrl} className="block">
-              <div className="aspect-square overflow-hidden bg-[color:var(--bg-3)]">
+              <div className={`${g.brand === 'pussy888' ? 'aspect-[229/457]' : 'aspect-square'} overflow-hidden bg-[color:var(--bg-3)]`}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={g.image}

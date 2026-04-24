@@ -4,7 +4,7 @@ import { SITE } from '@/lib/site';
 const NAV = [
   { href: '/', label: 'Home' },
   { href: '/rtp/', label: 'RTP Tracker' },
-  { href: '/download/mega888/', label: 'Download' },
+  { href: '/download/', label: 'Download' },
   { href: '/tips/', label: 'Game Tips' },
   { href: '/about/', label: 'About' },
 ];

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-// Withdrawal Proof — posts a "payout approved" card showing amount,
-// bank, submit→approval timing. Unique to MEGAJOM (not on OCS8 site).
+// Withdrawal Proof — matches user's MEGAJOM template format.
 
 import { loadJson, sendMarkdownPhotoPost, md } from './_helpers.mjs';
 
@@ -28,9 +27,9 @@ function fmtDuration(s) {
   return mins > 0 ? `${mins} min ${secs}s` : `${secs}s`;
 }
 
-function pickHeaderImage() {
+function pickHeaderImage(brand) {
   const games = loadJson('data/games.json');
-  const pool = (games.pussy888 ?? []).filter((g) => g.category === 'slot');
+  const pool = (games[brand] ?? []).filter((g) => g.category === 'slot');
   if (!pool.length) return '/images/games/mega888/great-blue.png';
   return pool[Math.floor(Math.random() * pool.length)].image;
 }
@@ -39,7 +38,7 @@ function buildCaption(entry) {
   const brand = BRAND_LABEL[entry.brand] ?? entry.brand;
 
   return [
-    `*MEGAJOM\\.NET*`,
+    `🤖 *MEGAJOM*`,
     ``,
     `🟢 *WITHDRAWAL PROOF — APPROVED* ✅`,
     ``,
@@ -51,20 +50,18 @@ function buildCaption(entry) {
     ``,
     `⏱️ *Submit:* ${md(entry.submit_time)}`,
     `✅ *Approved:* ${md(entry.approval_time)}`,
-    `⚡ *Processing Time:* ${md(fmtDuration(entry.duration_seconds))}`,
+    `⚡️ *Processing Time:* ${md(fmtDuration(entry.duration_seconds))}`,
     ``,
-    `🚀 *Cuci laju guaranteed* — MEGAJOM pays out in under 5 minutes\\.`,
-    ``,
-    `🚨 Daftar sekarang, deposit sama laju\\.`,
+    `🚨 Jom Menang, Jom Mega \\!`,
   ].join('\n');
 }
 
 async function main() {
   const entry = pickEntry();
-  const imagePath = pickHeaderImage();
+  const imagePath = pickHeaderImage(entry.brand);
   const caption = buildCaption(entry);
   const result = await sendMarkdownPhotoPost({ imagePath, caption });
-  console.log(`✅ Posted withdrawal-proof #${result.message_id} — ${entry.member} ${fmtRM(entry.amount)} in ${fmtDuration(entry.duration_seconds)}`);
+  console.log(`✅ Posted withdrawal-proof #${result.message_id} — ${entry.member} ${fmtRM(entry.amount)} via ${entry.bank}`);
 }
 
 main().catch((err) => {

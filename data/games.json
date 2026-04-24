@@ -1,1899 +1,1155 @@
 {
   "mega888": [
     {
-      "id": "chinese-new-year",
-      "name_en": "Chinese New Year",
-      "original_id": "0a1e4200-da45-4efd-8b3d-893a36691b92",
-      "image": "/images/games/mega888/chinese-new-year.png",
+      "id": "rally",
+      "name_en": "Rally",
+      "original_id": "imgi_100_rally",
+      "image": "/images/games/mega888/rally.jpg",
       "category": "slot",
-      "tags": [
-        "asian",
-        "festival"
-      ],
-      "rtp_base": 97.5
-    },
-    {
-      "id": "shining-stars",
-      "name_en": "Shining Stars",
-      "original_id": "0a0073d1-457e-4ce7-bda5-ec68b4a849d6",
-      "image": "/images/games/mega888/shining-stars.png",
-      "category": "slot",
-      "tags": [
-        "classic",
-        "stars"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "lucky-streak-mahjong",
-      "name_en": "Lucky Streak Mahjong",
-      "original_id": "0a469e6b-100c-4fef-ab2a-a56b979f6079",
-      "image": "/images/games/mega888/lucky-streak-mahjong.png",
-      "category": "slot",
-      "tags": [
-        "mahjong",
-        "asian"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "midas",
-      "name_en": "Midas",
-      "original_id": "0abae265-2b3b-4fc2-b643-90b7dfe7822c",
-      "image": "/images/games/mega888/midas.png",
-      "category": "slot",
-      "tags": [
-        "mythology",
-        "gold"
-      ],
-      "rtp_base": 96.1
-    },
-    {
-      "id": "discovery",
-      "name_en": "Discovery",
-      "original_id": "0b4fc785-bd57-4a5e-a3b7-30db34ceafd6",
-      "image": "/images/games/mega888/discovery.png",
-      "category": "slot",
-      "tags": [
-        "columbus",
-        "adventure"
-      ],
-      "rtp_base": 96.9
-    },
-    {
-      "id": "dwarves-wild",
-      "name_en": "Dwarves Wild",
-      "original_id": "0b80cd1c-3f0b-4cb3-9069-527af4242f33",
-      "image": "/images/games/mega888/dwarves-wild.png",
-      "category": "slot",
-      "tags": [
-        "fantasy",
-        "dwarves"
-      ],
-      "rtp_base": 97.2
-    },
-    {
-      "id": "great-of-china",
-      "name_en": "Great of China",
-      "original_id": "01d7eb2d-bda7-47d7-9046-1551d6c57dc7",
-      "image": "/images/games/mega888/great-of-china.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "wall"
-      ],
-      "rtp_base": 96.4
-    },
-    {
-      "id": "battle-riches",
-      "name_en": "Battle Riches",
-      "original_id": "1d3747d5-fd84-4fdc-af55-607d1b408314",
-      "image": "/images/games/mega888/battle-riches.png",
-      "category": "slot",
-      "tags": [
-        "warrior",
-        "fantasy"
-      ],
-      "rtp_base": 96.2
-    },
-    {
-      "id": "big-chef",
-      "name_en": "Big Chef",
-      "original_id": "1ed0735b-fba2-421f-b1a3-9ec87bf89dc1",
-      "image": "/images/games/mega888/big-chef.png",
-      "category": "slot",
-      "tags": [
-        "food",
-        "fun"
-      ],
-      "rtp_base": 96.2
-    },
-    {
-      "id": "blazing-rat",
-      "name_en": "Blazing Rat",
-      "original_id": "2e838b30-24f4-45a5-8a4e-1974803e2444",
-      "image": "/images/games/mega888/blazing-rat.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "zodiac"
-      ],
-      "rtp_base": 96.8
-    },
-    {
-      "id": "hanzos-dojo",
-      "name_en": "Hanzo's Dojo",
-      "original_id": "2eae9a03-3e2a-4bb2-abbe-7b276c260466",
-      "image": "/images/games/mega888/hanzos-dojo.png",
-      "category": "slot",
-      "tags": [
-        "samurai",
-        "japan"
-      ],
+      "tags": [],
       "rtp_base": 96.5
-    },
-    {
-      "id": "vargas",
-      "name_en": "Vargas Fury",
-      "original_id": "2ec01e71-ab56-46f5-a6aa-41694da685a9",
-      "image": "/images/games/mega888/vargas.png",
-      "category": "slot",
-      "tags": [
-        "boxing",
-        "action"
-      ],
-      "rtp_base": 97.1
-    },
-    {
-      "id": "money-slots",
-      "name_en": "Money Slots",
-      "original_id": "2f71c4a5-d8cb-493f-b77d-791ab852c694",
-      "image": "/images/games/mega888/money-slots.png",
-      "category": "slot",
-      "tags": [
-        "money",
-        "classic"
-      ],
-      "rtp_base": 96.7
-    },
-    {
-      "id": "sword-khan",
-      "name_en": "Sword Khan",
-      "original_id": "3b2c80a3-2f1e-4c05-87a9-9e9ba210b234",
-      "image": "/images/games/mega888/sword-khan.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "warrior"
-      ],
-      "rtp_base": 96.9
-    },
-    {
-      "id": "jingle-bells",
-      "name_en": "Jingle Bells",
-      "original_id": "3c0e7008-25b0-4410-aa3d-0d0647c59c2d",
-      "image": "/images/games/mega888/jingle-bells.png",
-      "category": "slot",
-      "tags": [
-        "christmas",
-        "holiday"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "golden-monkey",
-      "name_en": "Golden Monkey",
-      "original_id": "4a0b3afb-3457-415a-a831-0197476caab5",
-      "image": "/images/games/mega888/golden-monkey.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "monkey"
-      ],
-      "rtp_base": 96.4
-    },
-    {
-      "id": "eight-ball-slots",
-      "name_en": "8 Ball Slots",
-      "original_id": "4b5820d3-bf05-4326-af86-5ddba7cee00a",
-      "image": "/images/games/mega888/eight-ball-slots.png",
-      "category": "slot",
-      "tags": [
-        "pool",
-        "sports"
-      ],
-      "rtp_base": 96.8
-    },
-    {
-      "id": "monkey-world",
-      "name_en": "Monkey World",
-      "original_id": "4e240cdb-c78c-4a8a-8a0d-5f4f4df86dce",
-      "image": "/images/games/mega888/monkey-world.png",
-      "category": "slot",
-      "tags": [
-        "monkey",
-        "jungle"
-      ],
-      "rtp_base": 96.1
     },
     {
       "id": "raging-rex",
       "name_en": "Raging Rex",
-      "original_id": "4f932432-6696-49b5-96b3-19ffd8aa1960",
-      "image": "/images/games/mega888/raging-rex.png",
+      "original_id": "imgi_101_rangingrex",
+      "image": "/images/games/mega888/raging-rex.jpg",
       "category": "slot",
-      "tags": [
-        "prehistoric",
-        "dinosaur"
-      ],
-      "rtp_base": 97.3
-    },
-    {
-      "id": "xmas-magic",
-      "name_en": "Xmas Magic",
-      "original_id": "05c6c434-3457-45e5-82a3-544d03a5d875",
-      "image": "/images/games/mega888/xmas-magic.png",
-      "category": "slot",
-      "tags": [
-        "christmas",
-        "holiday"
-      ],
-      "rtp_base": 96.6
-    },
-    {
-      "id": "cleopatras-treasure",
-      "name_en": "Cleopatra's Treasure",
-      "original_id": "06afeafc-ef7c-4a05-b4ec-62fe3e049924",
-      "image": "/images/games/mega888/cleopatras-treasure.png",
-      "category": "slot",
-      "tags": [
-        "egypt",
-        "treasure"
-      ],
-      "rtp_base": 97.1
-    },
-    {
-      "id": "fortune-fest",
-      "name_en": "Fortune Fest",
-      "original_id": "6b783efc-9549-4178-8e0b-1af0169f79d4",
-      "image": "/images/games/mega888/fortune-fest.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "angpao"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "wild-fireworks",
-      "name_en": "Wild Fireworks",
-      "original_id": "6e0b7c83-4830-435d-8f7b-52cb2ee53e1f",
-      "image": "/images/games/mega888/wild-fireworks.png",
-      "category": "slot",
-      "tags": [
-        "festival",
-        "bonus"
-      ],
-      "rtp_base": 96
-    },
-    {
-      "id": "lucky-cat",
-      "name_en": "Lucky Cat",
-      "original_id": "6ee5f4a1-abec-4db0-9e0d-b9347506c996",
-      "image": "/images/games/mega888/lucky-cat.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "cat"
-      ],
-      "rtp_base": 96.8
-    },
-    {
-      "id": "orient-express",
-      "name_en": "Orient Express",
-      "original_id": "7bdd6974-7ba4-4198-9e1b-2c09eef80478",
-      "image": "/images/games/mega888/orient-express.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "travel"
-      ],
-      "rtp_base": 96.9
-    },
-    {
-      "id": "feng-shen",
-      "name_en": "Feng Shen",
-      "original_id": "7ee7c515-9731-491b-8a82-911609a9c524",
-      "image": "/images/games/mega888/feng-shen.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "deity"
-      ],
-      "rtp_base": 96.8
-    },
-    {
-      "id": "halloween-fortune",
-      "name_en": "Halloween Fortune",
-      "original_id": "7f1b0715-3c89-41bb-a892-6c5d778a1867",
-      "image": "/images/games/mega888/halloween-fortune.png",
-      "category": "slot",
-      "tags": [
-        "halloween",
-        "holiday"
-      ],
-      "rtp_base": 96.6
-    },
-    {
-      "id": "tigers-glory",
-      "name_en": "Tiger's Glory",
-      "original_id": "7fe99cda-3fbb-4ba1-aa78-041f89e16c97",
-      "image": "/images/games/mega888/tigers-glory.png",
-      "category": "slot",
-      "tags": [
-        "tiger",
-        "big-win"
-      ],
-      "rtp_base": 96.1
-    },
-    {
-      "id": "champions-rome",
-      "name_en": "Champions Rome",
-      "original_id": "8ab4fe85-e36e-4c34-b305-4bdb04dbb8e8",
-      "image": "/images/games/mega888/champions-rome.png",
-      "category": "slot",
-      "tags": [
-        "sports",
-        "rome"
-      ],
-      "rtp_base": 97.5
-    },
-    {
-      "id": "sizzling-spins",
-      "name_en": "Sizzling Spins",
-      "original_id": "8bd1d79d-05d1-4f1f-aab0-9e4b47944087",
-      "image": "/images/games/mega888/sizzling-spins.png",
-      "category": "slot",
-      "tags": [
-        "fire",
-        "classic"
-      ],
-      "rtp_base": 96.9
-    },
-    {
-      "id": "rally-championship",
-      "name_en": "Rally Championship",
-      "original_id": "8d1687d8-837b-4bf9-9c40-d72741c55326",
-      "image": "/images/games/mega888/rally-championship.png",
-      "category": "slot",
-      "tags": [
-        "racing",
-        "sports"
-      ],
-      "rtp_base": 97.5
-    },
-    {
-      "id": "enchanted-garden",
-      "name_en": "Enchanted Garden",
-      "original_id": "8ec05388-3927-41e4-be6a-ee308475b2fb",
-      "image": "/images/games/mega888/enchanted-garden.png",
-      "category": "slot",
-      "tags": [
-        "fantasy",
-        "fairy"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "shark",
-      "name_en": "Shark",
-      "original_id": "8f3c33db-4dbc-443d-ba6b-f770d8cfdd5f",
-      "image": "/images/games/mega888/shark.png",
-      "category": "slot",
-      "tags": [
-        "ocean",
-        "predator"
-      ],
-      "rtp_base": 96.4
-    },
-    {
-      "id": "santas",
-      "name_en": "Santa's",
-      "original_id": "8f6abf68-f728-4a3d-aa61-44f80e82ca38",
-      "image": "/images/games/mega888/santas.png",
-      "category": "slot",
-      "tags": [
-        "christmas",
-        "holiday"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "iceland",
-      "name_en": "Iceland",
-      "original_id": "8fce5a96-e0b1-4fa3-9833-07882eb5609a",
-      "image": "/images/games/mega888/iceland.png",
-      "category": "slot",
-      "tags": [
-        "ice",
-        "adventure"
-      ],
-      "rtp_base": 96.9
-    },
-    {
-      "id": "calamity-bubba",
-      "name_en": "Calamity Bubba",
-      "original_id": "9a4d2ce8-fbdc-4291-8cb6-7088385736cc",
-      "image": "/images/games/mega888/calamity-bubba.png",
-      "category": "slot",
-      "tags": [
-        "western",
-        "classic"
-      ],
-      "rtp_base": 97.2
-    },
-    {
-      "id": "matsuri",
-      "name_en": "Matsuri",
-      "original_id": "9c1c8efd-078c-4411-9297-97338535a044",
-      "image": "/images/games/mega888/matsuri.png",
-      "category": "slot",
-      "tags": [
-        "japan",
-        "festival"
-      ],
-      "rtp_base": 96.6
-    },
-    {
-      "id": "samurai",
-      "name_en": "Samurai",
-      "original_id": "9cf8105a-b506-46d3-9ee6-727a098323d1",
-      "image": "/images/games/mega888/samurai.png",
-      "category": "slot",
-      "tags": [
-        "samurai",
-        "japan"
-      ],
-      "rtp_base": 96.9
-    },
-    {
-      "id": "gold-rush",
-      "name_en": "Gold Rush",
-      "original_id": "9e0c46ef-719b-4c7b-a05f-df6da1019316",
-      "image": "/images/games/mega888/gold-rush.png",
-      "category": "slot",
-      "tags": [
-        "gold",
-        "western"
-      ],
-      "rtp_base": 96.6
-    },
-    {
-      "id": "krishnas-luck",
-      "name_en": "Krishna's Luck",
-      "original_id": "9e8ab60a-39cf-4aa8-8a3c-66d5e2cc0e32",
-      "image": "/images/games/mega888/krishnas-luck.png",
-      "category": "slot",
-      "tags": [
-        "indian",
-        "mythology"
-      ],
-      "rtp_base": 97.4
-    },
-    {
-      "id": "ultra-wealth",
-      "name_en": "Ultra Wealth",
-      "original_id": "11ed6370-46ff-4554-9a12-3b0dec610dd9",
-      "image": "/images/games/mega888/ultra-wealth.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "angpao"
-      ],
+      "tags": [],
       "rtp_base": 96.5
-    },
-    {
-      "id": "boxing-showdown",
-      "name_en": "Boxing Showdown",
-      "original_id": "28a997ab-71fd-44ca-9eef-cacb4f96b861",
-      "image": "/images/games/mega888/boxing-showdown.png",
-      "category": "slot",
-      "tags": [
-        "boxing",
-        "sports"
-      ],
-      "rtp_base": 96.6
-    },
-    {
-      "id": "macau",
-      "name_en": "Macau",
-      "original_id": "28f8c615-93f8-415c-a441-300d041cfd44",
-      "image": "/images/games/mega888/macau.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "city"
-      ],
-      "rtp_base": 97.2
-    },
-    {
-      "id": "beast-wealth",
-      "name_en": "Beast of Wealth",
-      "original_id": "31dc63b2-4be2-4469-9b12-195c3e48b0e5",
-      "image": "/images/games/mega888/beast-wealth.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "wealth"
-      ],
-      "rtp_base": 97.2
-    },
-    {
-      "id": "fountain-of-eternal-life",
-      "name_en": "Fountain of Eternal Life",
-      "original_id": "37d8cc66-998f-411a-b98f-497bb70cb868",
-      "image": "/images/games/mega888/fountain-of-eternal-life.png",
-      "category": "slot",
-      "tags": [
-        "fantasy",
-        "mythology"
-      ],
-      "rtp_base": 96.4
-    },
-    {
-      "id": "phoenix",
-      "name_en": "Phoenix",
-      "original_id": "38e540d4-c91e-438e-b491-ffca06b86f08",
-      "image": "/images/games/mega888/phoenix.png",
-      "category": "slot",
-      "tags": [
-        "mythology",
-        "bird"
-      ],
-      "rtp_base": 96.6
-    },
-    {
-      "id": "tiger-glory",
-      "name_en": "Tiger Glory",
-      "original_id": "49dfd4fb-8346-445a-8710-c9bae8fb4e3b",
-      "image": "/images/games/mega888/tiger-glory.png",
-      "category": "slot",
-      "tags": [
-        "tiger",
-        "big-win"
-      ],
-      "rtp_base": 96.2
-    },
-    {
-      "id": "phoenix-blazing",
-      "name_en": "Phoenix Blazing",
-      "original_id": "52d261f8-f37b-4ec4-911c-9f25e6c1ebcb",
-      "image": "/images/games/mega888/phoenix-blazing.png",
-      "category": "slot",
-      "tags": [
-        "phoenix",
-        "fire"
-      ],
-      "rtp_base": 96.8
-    },
-    {
-      "id": "magical-spin",
-      "name_en": "Magical Spin",
-      "original_id": "61b2996f-bf87-416a-91c5-fb43329ee6b1",
-      "image": "/images/games/mega888/magical-spin.png",
-      "category": "slot",
-      "tags": [
-        "unicorn",
-        "fantasy"
-      ],
-      "rtp_base": 97.4
-    },
-    {
-      "id": "dolphin",
-      "name_en": "Dolphin",
-      "original_id": "63f5050b-4fd9-42ea-90b0-633287596d22",
-      "image": "/images/games/mega888/dolphin.png",
-      "category": "slot",
-      "tags": [
-        "ocean",
-        "classic"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "dragon-hero",
-      "name_en": "Dragon Hero",
-      "original_id": "65dfdf26-0a9a-49de-be32-752fccc05a55",
-      "image": "/images/games/mega888/dragon-hero.png",
-      "category": "slot",
-      "tags": [
-        "dragon",
-        "warrior"
-      ],
-      "rtp_base": 96.1
-    },
-    {
-      "id": "robin-sherwood",
-      "name_en": "Robin of Sherwood",
-      "original_id": "77df902e-9c07-4bae-9c77-61f4148f9fa1",
-      "image": "/images/games/mega888/robin-sherwood.png",
-      "category": "slot",
-      "tags": [
-        "adventure",
-        "archer"
-      ],
-      "rtp_base": 96.7
-    },
-    {
-      "id": "circus",
-      "name_en": "Circus",
-      "original_id": "78b21987-0bff-4b50-92b5-e853bb64b6b8",
-      "image": "/images/games/mega888/circus.png",
-      "category": "slot",
-      "tags": [
-        "circus",
-        "classic"
-      ],
-      "rtp_base": 96.8
-    },
-    {
-      "id": "aztec",
-      "name_en": "Aztec",
-      "original_id": "82d4c2f4-a772-4cc6-a68c-19f6b2b4faf5",
-      "image": "/images/games/mega888/aztec.png",
-      "category": "slot",
-      "tags": [
-        "aztec",
-        "adventure"
-      ],
-      "rtp_base": 96.4
-    },
-    {
-      "id": "fortune-panda",
-      "name_en": "Fortune Panda",
-      "original_id": "94cb1d42-1088-46d3-b255-3c0a86868965",
-      "image": "/images/games/mega888/fortune-panda.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "angpao"
-      ],
-      "rtp_base": 97.1
-    },
-    {
-      "id": "cash-noire",
-      "name_en": "Cash Noire",
-      "original_id": "94f42b71-3cb7-44e7-9961-9a7c33c02949",
-      "image": "/images/games/mega888/cash-noire.png",
-      "category": "slot",
-      "tags": [
-        "detective",
-        "mystery"
-      ],
-      "rtp_base": 97.4
-    },
-    {
-      "id": "water-margin",
-      "name_en": "Water Margin",
-      "original_id": "126ae657-8889-4334-ad55-b9af2184761f",
-      "image": "/images/games/mega888/water-margin.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "classic"
-      ],
-      "rtp_base": 96.5
-    },
-    {
-      "id": "lucky-9",
-      "name_en": "Lucky 9",
-      "original_id": "145f3b50-dede-41f9-a72d-eef473eb2c5b",
-      "image": "/images/games/mega888/lucky-9.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "classic"
-      ],
-      "rtp_base": 96.5
-    },
-    {
-      "id": "agent-51",
-      "name_en": "Agent 51",
-      "original_id": "182c1877-6ec9-4498-9239-4bc2edb11b99",
-      "image": "/images/games/mega888/agent-51.png",
-      "category": "slot",
-      "tags": [
-        "spy",
-        "action"
-      ],
-      "rtp_base": 97.1
-    },
-    {
-      "id": "steamtower",
-      "name_en": "Steamtower",
-      "original_id": "198f087e-d4fc-46b3-9127-b53af4073da9",
-      "image": "/images/games/mega888/steamtower.png",
-      "category": "slot",
-      "tags": [
-        "steampunk",
-        "adventure"
-      ],
-      "rtp_base": 96.2
-    },
-    {
-      "id": "dragonz",
-      "name_en": "Dragonz",
-      "original_id": "272aba0b-a8f1-4583-baca-5584fa900299",
-      "image": "/images/games/mega888/dragonz.png",
-      "category": "slot",
-      "tags": [
-        "dragon",
-        "fantasy"
-      ],
-      "rtp_base": 96.6
-    },
-    {
-      "id": "shanghai-lights",
-      "name_en": "Shanghai Lights",
-      "original_id": "277a60d5-24d8-439b-a37e-ec35fa472577",
-      "image": "/images/games/mega888/shanghai-lights.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "city"
-      ],
-      "rtp_base": 96.4
-    },
-    {
-      "id": "emperor-gate",
-      "name_en": "Emperor Gate",
-      "original_id": "346c8264-a007-49f2-99f1-b7bbf82a87e5",
-      "image": "/images/games/mega888/emperor-gate.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "emperor"
-      ],
-      "rtp_base": 96.1
-    },
-    {
-      "id": "lucky-new-year",
-      "name_en": "Lucky New Year",
-      "original_id": "529b5779-9870-4ee4-9f75-27148f992088",
-      "image": "/images/games/mega888/lucky-new-year.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "festival"
-      ],
-      "rtp_base": 96.8
-    },
-    {
-      "id": "house-of-doom",
-      "name_en": "House of Doom",
-      "original_id": "0537b34c-1ac4-4f96-b377-7d8ed4b351dd",
-      "image": "/images/games/mega888/house-of-doom.png",
-      "category": "slot",
-      "tags": [
-        "horror",
-        "rock"
-      ],
-      "rtp_base": 97.1
-    },
-    {
-      "id": "chinese-lion",
-      "name_en": "Chinese Lion",
-      "original_id": "652d905e-95ce-4b23-87ed-020b3b3f5871",
-      "image": "/images/games/mega888/chinese-lion.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "festival"
-      ],
-      "rtp_base": 97.3
-    },
-    {
-      "id": "safari-heat",
-      "name_en": "Safari Heat",
-      "original_id": "671d3638-85de-4347-a40b-14663d26a54e",
-      "image": "/images/games/mega888/safari-heat.png",
-      "category": "slot",
-      "tags": [
-        "wild",
-        "jackpot"
-      ],
-      "rtp_base": 96.8
     },
     {
       "id": "razor-shark",
       "name_en": "Razor Shark",
-      "original_id": "690f0f24-c18a-438f-9fa7-a8b9ee029364",
-      "image": "/images/games/mega888/razor-shark.png",
+      "original_id": "imgi_102_razorshark",
+      "image": "/images/games/mega888/razor-shark.jpg",
       "category": "slot",
-      "tags": [
-        "ocean",
-        "predator"
-      ],
-      "rtp_base": 96.7
-    },
-    {
-      "id": "cleopatra",
-      "name_en": "Cleopatra",
-      "original_id": "790e012a-5588-43b8-a850-98c083bf3b7d",
-      "image": "/images/games/mega888/cleopatra.png",
-      "category": "slot",
-      "tags": [
-        "egypt",
-        "queen"
-      ],
-      "rtp_base": 97.2
-    },
-    {
-      "id": "cleopatra-2",
-      "name_en": "Cleopatra 2",
-      "original_id": "825c4927-81a3-4495-83d8-5f5be8154ca2",
-      "image": "/images/games/mega888/cleopatra-2.png",
-      "category": "slot",
-      "tags": [
-        "egypt",
-        "queen"
-      ],
-      "rtp_base": 96.9
-    },
-    {
-      "id": "burning-tiger",
-      "name_en": "Burning Tiger",
-      "original_id": "859aa9a4-a6b3-48f6-96c5-ec63e5955a07",
-      "image": "/images/games/mega888/burning-tiger.png",
-      "category": "slot",
-      "tags": [
-        "tiger",
-        "fire"
-      ],
-      "rtp_base": 96.8
-    },
-    {
-      "id": "eye-of-ra",
-      "name_en": "Eye of Ra",
-      "original_id": "0940d2ca-40f0-4e9a-a158-dbb8a6d11231",
-      "image": "/images/games/mega888/eye-of-ra.png",
-      "category": "slot",
-      "tags": [
-        "egypt",
-        "mythology"
-      ],
-      "rtp_base": 96.4
-    },
-    {
-      "id": "bust-a-beard",
-      "name_en": "Bust a Beard",
-      "original_id": "969f65f6-4143-44a8-825b-bf0336dfc2dc",
-      "image": "/images/games/mega888/bust-a-beard.png",
-      "category": "slot",
-      "tags": [
-        "pirate",
-        "fun"
-      ],
-      "rtp_base": 96
-    },
-    {
-      "id": "grown-up-beauties",
-      "name_en": "Grown Up Beauties",
-      "original_id": "1843e127-7a5b-4b63-b88a-08a19d833cb9",
-      "image": "/images/games/mega888/grown-up-beauties.png",
-      "category": "slot",
-      "tags": [
-        "girls",
-        "classic"
-      ],
-      "rtp_base": 97.3
-    },
-    {
-      "id": "triple-twister",
-      "name_en": "Triple Twister",
-      "original_id": "1935a8f4-1803-4e79-9d30-454d77c0655d",
-      "image": "/images/games/mega888/triple-twister.png",
-      "category": "slot",
-      "tags": [
-        "weather",
-        "big-win"
-      ],
-      "rtp_base": 96.6
-    },
-    {
-      "id": "golden-tour",
-      "name_en": "Golden Tour",
-      "original_id": "2492c4c3-4ffc-444b-a069-081525d98346",
-      "image": "/images/games/mega888/golden-tour.png",
-      "category": "slot",
-      "tags": [
-        "sports",
-        "golf"
-      ],
+      "tags": [],
       "rtp_base": 96.5
     },
     {
-      "id": "indian-myth",
-      "name_en": "Indian Myth",
-      "original_id": "3371c996-099e-498c-964f-25f4f4014dc8",
-      "image": "/images/games/mega888/indian-myth.png",
+      "id": "robin-of-sherwood",
+      "name_en": "Robin of Sherwood",
+      "original_id": "imgi_103_robinofshewood",
+      "image": "/images/games/mega888/robin-of-sherwood.jpg",
       "category": "slot",
-      "tags": [
-        "indian",
-        "mythology"
-      ],
-      "rtp_base": 96.7
-    },
-    {
-      "id": "highway",
-      "name_en": "Highway",
-      "original_id": "5205d199-b6bd-4f42-be22-e5bfd7692040",
-      "image": "/images/games/mega888/highway.png",
-      "category": "slot",
-      "tags": [
-        "truck",
-        "classic"
-      ],
-      "rtp_base": 96.6
-    },
-    {
-      "id": "dragon-strike",
-      "name_en": "Dragon Strike",
-      "original_id": "5508a35c-1a4e-4f80-a064-1021642f897a",
-      "image": "/images/games/mega888/dragon-strike.png",
-      "category": "slot",
-      "tags": [
-        "dragon",
-        "action"
-      ],
-      "rtp_base": 96.7
-    },
-    {
-      "id": "sun-wukong",
-      "name_en": "Sun Wukong",
-      "original_id": "6952d780-d465-4530-a470-ea875ae707e2",
-      "image": "/images/games/mega888/sun-wukong.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "monkey-king"
-      ],
-      "rtp_base": 96.1
-    },
-    {
-      "id": "great-stars",
-      "name_en": "Great Stars",
-      "original_id": "7139de83-e1ae-4c2b-90ec-a0943000ba7e",
-      "image": "/images/games/mega888/great-stars.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "emperor"
-      ],
-      "rtp_base": 97.2
-    },
-    {
-      "id": "clash-of-beasts",
-      "name_en": "Clash of Beasts",
-      "original_id": "7284c9c9-9788-42f2-9567-d8a65c1ef4be",
-      "image": "/images/games/mega888/clash-of-beasts.png",
-      "category": "slot",
-      "tags": [
-        "beast",
-        "action"
-      ],
-      "rtp_base": 96.7
-    },
-    {
-      "id": "great-88",
-      "name_en": "Great 88",
-      "original_id": "7470b27b-1b80-4d5a-bfd9-c1e9b118d336",
-      "image": "/images/games/mega888/great-88.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "lucky"
-      ],
+      "tags": [],
       "rtp_base": 96.5
     },
     {
-      "id": "penguin-city",
-      "name_en": "Penguin City",
-      "original_id": "09004c69-ae31-4d28-b0bd-9d6315683dc4",
-      "image": "/images/games/mega888/penguin-city.png",
+      "id": "royal-masquerade",
+      "name_en": "Royal Masquerade",
+      "original_id": "imgi_104_royalmasquerade",
+      "image": "/images/games/mega888/royal-masquerade.jpg",
       "category": "slot",
-      "tags": [
-        "penguin",
-        "fun"
-      ],
+      "tags": [],
       "rtp_base": 96.5
     },
     {
-      "id": "roulette-studio",
-      "name_en": "Roulette Studio",
-      "original_id": "33968cdf-ea2b-41d5-9f5f-d7e9332e6c85",
-      "image": "/images/games/mega888/roulette-studio.png",
-      "category": "live",
-      "tags": [
-        "table",
-        "live"
-      ],
-      "rtp_base": 96.4
+      "id": "safari-heat",
+      "name_en": "Safari Heat",
+      "original_id": "imgi_105_safariheat",
+      "image": "/images/games/mega888/safari-heat.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
-      "id": "beach-fortune",
-      "name_en": "Beach Fortune",
-      "original_id": "51099a69-ff3d-4167-94d4-c317087883e9",
-      "image": "/images/games/mega888/beach-fortune.png",
+      "id": "santa",
+      "name_en": "Santa",
+      "original_id": "imgi_106_santa",
+      "image": "/images/games/mega888/santa.jpg",
       "category": "slot",
-      "tags": [
-        "beach",
-        "summer"
-      ],
-      "rtp_base": 97.4
-    },
-    {
-      "id": "kawaii-chan",
-      "name_en": "Kawaii Chan",
-      "original_id": "062094ad-3369-45e9-9eac-b208877bcc81",
-      "image": "/images/games/mega888/kawaii-chan.png",
-      "category": "slot",
-      "tags": [
-        "anime",
-        "fun"
-      ],
-      "rtp_base": 97.2
-    },
-    {
-      "id": "steel-bull",
-      "name_en": "Steel Bull",
-      "original_id": "76324e41-cbf6-47ab-b8b2-60aac2e6bf93",
-      "image": "/images/games/mega888/steel-bull.png",
-      "category": "slot",
-      "tags": [
-        "bull",
-        "action"
-      ],
-      "rtp_base": 97.2
-    },
-    {
-      "id": "wolf-run",
-      "name_en": "Wolf Run",
-      "original_id": "192233a2-2f9a-45ab-9879-66075ccf82b2",
-      "image": "/images/games/mega888/wolf-run.png",
-      "category": "slot",
-      "tags": [
-        "wolf",
-        "wild"
-      ],
-      "rtp_base": 97.3
-    },
-    {
-      "id": "temple-wealth",
-      "name_en": "Temple of Wealth",
-      "original_id": "639649ba-faee-418d-a5d2-fa13245d1a52",
-      "image": "/images/games/mega888/temple-wealth.png",
-      "category": "slot",
-      "tags": [
-        "temple",
-        "treasure"
-      ],
-      "rtp_base": 97.2
-    },
-    {
-      "id": "golden-lotus",
-      "name_en": "Golden Lotus",
-      "original_id": "858349c7-b762-458c-81dd-8332c01c6e49",
-      "image": "/images/games/mega888/golden-lotus.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "flower"
-      ],
-      "rtp_base": 96.8
-    },
-    {
-      "id": "lion-dance",
-      "name_en": "Lion Dance",
-      "original_id": "3204066d-c424-4c50-a469-15ed5abf036c",
-      "image": "/images/games/mega888/lion-dance.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "festival"
-      ],
-      "rtp_base": 97.3
-    },
-    {
-      "id": "chang-you-ju",
-      "name_en": "Chang You Ju",
-      "original_id": "6818527c-b90e-4174-885b-c2f9be8086a8",
-      "image": "/images/games/mega888/chang-you-ju.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "classic"
-      ],
-      "rtp_base": 97.2
-    },
-    {
-      "id": "golden-gods",
-      "name_en": "Golden Gods",
-      "original_id": "10383109-22d4-4c33-a094-08afcd775501",
-      "image": "/images/games/mega888/golden-gods.png",
-      "category": "slot",
-      "tags": [
-        "mythology",
-        "gold"
-      ],
-      "rtp_base": 97.4
-    },
-    {
-      "id": "golden-buck",
-      "name_en": "Golden Buck",
-      "original_id": "20042371-27db-4fe4-b911-3f2b588f9c0e",
-      "image": "/images/games/mega888/golden-buck.png",
-      "category": "slot",
-      "tags": [
-        "wild",
-        "gold"
-      ],
-      "rtp_base": 97
-    },
-    {
-      "id": "amazing-thailand",
-      "name_en": "Amazing Thailand",
-      "original_id": "50546393-6e72-42f6-82b4-8dab4e0c2718",
-      "image": "/images/games/mega888/amazing-thailand.png",
-      "category": "slot",
-      "tags": [
-        "thai",
-        "adventure"
-      ],
-      "rtp_base": 96.2
-    },
-    {
-      "id": "pyrexx",
-      "name_en": "Pyrexx",
-      "original_id": "54871344-08f4-4faf-9724-56bcdb5d4bea",
-      "image": "/images/games/mega888/pyrexx.png",
-      "category": "slot",
-      "tags": [
-        "sci-fi",
-        "action"
-      ],
-      "rtp_base": 97.1
-    },
-    {
-      "id": "dark-vortex",
-      "name_en": "Dark Vortex",
-      "original_id": "a4acdd55-2abe-448d-9942-1aab804e317d",
-      "image": "/images/games/mega888/dark-vortex.png",
-      "category": "slot",
-      "tags": [
-        "sci-fi",
-        "dark"
-      ],
-      "rtp_base": 97.4
-    },
-    {
-      "id": "night-out",
-      "name_en": "Night Out",
-      "original_id": "a8a9af0b-333a-44f9-a71c-2e8912f01c8e",
-      "image": "/images/games/mega888/night-out.png",
-      "category": "slot",
-      "tags": [
-        "party",
-        "classic"
-      ],
-      "rtp_base": 96.2
-    },
-    {
-      "id": "laura-lux",
-      "name_en": "Laura Lux",
-      "original_id": "a21c14d9-014a-4486-a676-2ee98fed83fc",
-      "image": "/images/games/mega888/laura-lux.png",
-      "category": "slot",
-      "tags": [
-        "adventure",
-        "tomb"
-      ],
-      "rtp_base": 97.4
-    },
-    {
-      "id": "golden-wales",
-      "name_en": "Golden Wales",
-      "original_id": "a34f2e6a-9745-4db1-8125-b3021e53d239",
-      "image": "/images/games/mega888/golden-wales.png",
-      "category": "slot",
-      "tags": [
-        "british",
-        "classic"
-      ],
-      "rtp_base": 96.9
-    },
-    {
-      "id": "bohemia-treasure",
-      "name_en": "Bohemia Treasure",
-      "original_id": "a43c6d78-2afb-41cb-af02-830a67a803bc",
-      "image": "/images/games/mega888/bohemia-treasure.png",
-      "category": "slot",
-      "tags": [
-        "fantasy",
-        "treasure"
-      ],
-      "rtp_base": 97
-    },
-    {
-      "id": "jin-ba-fu",
-      "name_en": "Jin Ba Fu",
-      "original_id": "a908b38c-d21b-4c0f-b677-0031cac49a1a",
-      "image": "/images/games/mega888/jin-ba-fu.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "angpao"
-      ],
-      "rtp_base": 97.2
-    },
-    {
-      "id": "dragon-gold",
-      "name_en": "Dragon Gold",
-      "original_id": "ac8c9ca1-0ff7-4c6a-b083-6929eeb0a43e",
-      "image": "/images/games/mega888/dragon-gold.png",
-      "category": "slot",
-      "tags": [
-        "dragon",
-        "gold"
-      ],
-      "rtp_base": 97.1
-    },
-    {
-      "id": "panther-moon",
-      "name_en": "Panther Moon",
-      "original_id": "ad4bac68-4ab1-4973-b39a-7635b2be84f6",
-      "image": "/images/games/mega888/panther-moon.png",
-      "category": "slot",
-      "tags": [
-        "wild",
-        "free-spin"
-      ],
-      "rtp_base": 97.5
-    },
-    {
-      "id": "lights",
-      "name_en": "Lights",
-      "original_id": "ad4f377a-b47d-42c5-893b-ee00d643ac2a",
-      "image": "/images/games/mega888/lights.png",
-      "category": "slot",
-      "tags": [
-        "classic",
-        "colors"
-      ],
-      "rtp_base": 97.4
-    },
-    {
-      "id": "aladdin-rubies",
-      "name_en": "Aladdin Rubies",
-      "original_id": "ad86c0aa-a048-4231-9da4-6f96d5e548fd",
-      "image": "/images/games/mega888/aladdin-rubies.png",
-      "category": "slot",
-      "tags": [
-        "arabian",
-        "genie"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "zaoken",
-      "name_en": "Zaoken",
-      "original_id": "adb9d83c-6f32-40d4-b099-4b8bf88a4465",
-      "image": "/images/games/mega888/zaoken.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "classic"
-      ],
-      "rtp_base": 96.1
-    },
-    {
-      "id": "gold-santa",
-      "name_en": "Gold Santa",
-      "original_id": "ae2b9b14-b08f-4e6e-a324-33468a1b9aab",
-      "image": "/images/games/mega888/gold-santa.png",
-      "category": "slot",
-      "tags": [
-        "christmas",
-        "holiday"
-      ],
-      "rtp_base": 97.1
-    },
-    {
-      "id": "big-win-cat",
-      "name_en": "Big Win Cat",
-      "original_id": "b2d0d84c-0f15-4538-b89b-6043271d7766",
-      "image": "/images/games/mega888/big-win-cat.png",
-      "category": "slot",
-      "tags": [
-        "cat",
-        "big-win"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "zombie-carnival",
-      "name_en": "Zombie Carnival",
-      "original_id": "b5b2714e-4415-4a88-909e-3abb3fe92eb7",
-      "image": "/images/games/mega888/zombie-carnival.png",
-      "category": "slot",
-      "tags": [
-        "zombie",
-        "horror"
-      ],
-      "rtp_base": 97
-    },
-    {
-      "id": "sherlock-mystery",
-      "name_en": "Sherlock Mystery",
-      "original_id": "b6f587e5-a7d2-4841-b572-c477b425cf50",
-      "image": "/images/games/mega888/sherlock-mystery.png",
-      "category": "slot",
-      "tags": [
-        "detective",
-        "mystery"
-      ],
-      "rtp_base": 96.4
-    },
-    {
-      "id": "lucky-koi",
-      "name_en": "Lucky Koi",
-      "original_id": "b8f09e4f-5981-4e9c-ab48-e8d29072028a",
-      "image": "/images/games/mega888/lucky-koi.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "fish"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "golden-8",
-      "name_en": "Golden 8",
-      "original_id": "b9a83828-a086-49c4-90f2-725fd1cf3271",
-      "image": "/images/games/mega888/golden-8.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "lucky"
-      ],
-      "rtp_base": 97.3
-    },
-    {
-      "id": "lucky-little-gods",
-      "name_en": "Lucky Little Gods",
-      "original_id": "b457b44e-bfef-4791-814e-e9fbcd15c31d",
-      "image": "/images/games/mega888/lucky-little-gods.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "deity"
-      ],
-      "rtp_base": 96.8
-    },
-    {
-      "id": "fortune-toto-4d",
-      "name_en": "Fortune Toto 4D",
-      "original_id": "b0492819-e2f6-4b5d-b345-ab26eadc7343",
-      "image": "/images/games/mega888/fortune-toto-4d.png",
-      "category": "slot",
-      "tags": [
-        "lottery",
-        "asian"
-      ],
-      "rtp_base": 96.6
-    },
-    {
-      "id": "thailand-tourist",
-      "name_en": "Thailand Tourist",
-      "original_id": "bb8ca4cc-0d94-42af-b100-85ec816ca4f1",
-      "image": "/images/games/mega888/thailand-tourist.png",
-      "category": "slot",
-      "tags": [
-        "thai",
-        "travel"
-      ],
-      "rtp_base": 96.1
-    },
-    {
-      "id": "golden-stag",
-      "name_en": "Golden Stag",
-      "original_id": "bbf92f44-1085-4781-9724-508d53345740",
-      "image": "/images/games/mega888/golden-stag.png",
-      "category": "slot",
-      "tags": [
-        "wild",
-        "deer"
-      ],
-      "rtp_base": 96.2
-    },
-    {
-      "id": "monkey-might",
-      "name_en": "Monkey Might",
-      "original_id": "bc5d223e-9004-47d2-85a2-7719f702d177",
-      "image": "/images/games/mega888/monkey-might.png",
-      "category": "slot",
-      "tags": [
-        "monkey",
-        "fun"
-      ],
-      "rtp_base": 96.4
-    },
-    {
-      "id": "fortunes",
-      "name_en": "Fortunes",
-      "original_id": "bf9813cc-0cfe-49e6-920d-9a611c0dcfbf",
-      "image": "/images/games/mega888/fortunes.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "fortune"
-      ],
-      "rtp_base": 97.1
-    },
-    {
-      "id": "yin-yang",
-      "name_en": "Yin Yang",
-      "original_id": "c0da0acf-694d-4cd3-9c4b-3f7c12bf3170",
-      "image": "/images/games/mega888/yin-yang.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "mystical"
-      ],
-      "rtp_base": 97.1
-    },
-    {
-      "id": "god-of-cookery",
-      "name_en": "God of Cookery",
-      "original_id": "c01decf1-7b3e-41db-9b2c-94e6d91a901b",
-      "image": "/images/games/mega888/god-of-cookery.png",
-      "category": "slot",
-      "tags": [
-        "food",
-        "asian"
-      ],
-      "rtp_base": 96.4
-    },
-    {
-      "id": "masquerade",
-      "name_en": "Masquerade",
-      "original_id": "c97bc3a0-d63f-4195-9b73-b10befd4e553",
-      "image": "/images/games/mega888/masquerade.png",
-      "category": "slot",
-      "tags": [
-        "fantasy",
-        "mystery"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "wild-bat",
-      "name_en": "Wild Bat",
-      "original_id": "c421e418-a7ae-4d92-846c-3b3bd94417ff",
-      "image": "/images/games/mega888/wild-bat.png",
-      "category": "slot",
-      "tags": [
-        "bat",
-        "mystery"
-      ],
-      "rtp_base": 97.5
-    },
-    {
-      "id": "burlesque",
-      "name_en": "Burlesque",
-      "original_id": "c615ea4e-caa8-45f1-bd1d-78c8a2264100",
-      "image": "/images/games/mega888/burlesque.png",
-      "category": "slot",
-      "tags": [
-        "girls",
-        "classic"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "wealth-treasure",
-      "name_en": "Wealth Treasure",
-      "original_id": "c525933c-5b89-496a-8473-df176d70b562",
-      "image": "/images/games/mega888/wealth-treasure.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "angpao"
-      ],
-      "rtp_base": 97.2
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
       "id": "sea-world",
       "name_en": "Sea World",
-      "original_id": "cda90119-8bdc-4aac-9a58-e4c2e9f6eb25",
-      "image": "/images/games/mega888/sea-world.png",
+      "original_id": "imgi_107_seaworld",
+      "image": "/images/games/mega888/sea-world.jpg",
       "category": "slot",
-      "tags": [
-        "ocean",
-        "adventure"
-      ],
-      "rtp_base": 97.3
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
-      "id": "5-dragons",
-      "name_en": "5 Dragons",
-      "original_id": "cdce3e41-8172-4b5e-8b76-bb00d4b625f0",
-      "image": "/images/games/mega888/5-dragons.png",
+      "id": "shining-stars",
+      "name_en": "Shining Stars",
+      "original_id": "imgi_108_shinibgstars",
+      "image": "/images/games/mega888/shining-stars.jpg",
       "category": "slot",
-      "tags": [
-        "dragon",
-        "asian"
-      ],
-      "rtp_base": 97.3
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
-      "id": "dart-punt-price",
-      "name_en": "Dart Punt Price",
-      "original_id": "cf943e41-1cc4-4177-9b19-f9742f24f3f1",
-      "image": "/images/games/mega888/dart-punt-price.png",
+      "id": "silent-run",
+      "name_en": "Silent Run",
+      "original_id": "imgi_109_silentrun",
+      "image": "/images/games/mega888/silent-run.jpg",
       "category": "slot",
-      "tags": [
-        "darts",
-        "sports"
-      ],
-      "rtp_base": 96.4
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
-      "id": "fortune-charm",
-      "name_en": "Fortune Charm",
-      "original_id": "cfefe446-28cd-4bdd-b420-e899684086b6",
-      "image": "/images/games/mega888/fortune-charm.png",
+      "id": "silver-bullet",
+      "name_en": "Silver Bullet",
+      "original_id": "imgi_110_siverbulletslots",
+      "image": "/images/games/mega888/silver-bullet.jpg",
       "category": "slot",
-      "tags": [
-        "asian",
-        "lucky"
-      ],
-      "rtp_base": 97.4
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
-      "id": "golden-beauty",
-      "name_en": "Golden Beauty",
-      "original_id": "d1a40c02-4bf5-44a2-9827-3eafebcf8d48",
-      "image": "/images/games/mega888/golden-beauty.png",
+      "id": "sizzling-spins",
+      "name_en": "Sizzling Spins",
+      "original_id": "imgi_111_sizzlingspins",
+      "image": "/images/games/mega888/sizzling-spins.jpg",
       "category": "slot",
-      "tags": [
-        "asian",
-        "classic"
-      ],
-      "rtp_base": 96.7
-    },
-    {
-      "id": "king-of-ghosts",
-      "name_en": "King of Ghosts",
-      "original_id": "d2ddf7ca-9502-4155-aae9-d96e0d56ef17",
-      "image": "/images/games/mega888/king-of-ghosts.png",
-      "category": "slot",
-      "tags": [
-        "ghost",
-        "horror"
-      ],
-      "rtp_base": 96.3
-    },
-    {
-      "id": "dolphin-reef",
-      "name_en": "Dolphin Reef",
-      "original_id": "d3ee2ce4-4d67-4a4a-bd70-90e0c8c185be",
-      "image": "/images/games/mega888/dolphin-reef.png",
-      "category": "slot",
-      "tags": [
-        "ocean",
-        "free-spin"
-      ],
-      "rtp_base": 97.4
-    },
-    {
-      "id": "ghost-of-christmas",
-      "name_en": "Ghost of Christmas",
-      "original_id": "d04bcdaa-c729-40e1-b593-6156641c446a",
-      "image": "/images/games/mega888/ghost-of-christmas.png",
-      "category": "slot",
-      "tags": [
-        "christmas",
-        "holiday"
-      ],
-      "rtp_base": 97.5
-    },
-    {
-      "id": "dolphin-gold",
-      "name_en": "Dolphin Gold",
-      "original_id": "d69faf4c-da62-4ca5-861e-c229e62fe7d7",
-      "image": "/images/games/mega888/dolphin-gold.png",
-      "category": "slot",
-      "tags": [
-        "ocean",
-        "gold"
-      ],
-      "rtp_base": 97.4
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
       "id": "sparta",
       "name_en": "Sparta",
-      "original_id": "d89fe480-04e5-4603-bf0f-127b38d6cb45",
-      "image": "/images/games/mega888/sparta.png",
+      "original_id": "imgi_112_sparta",
+      "image": "/images/games/mega888/sparta.jpg",
       "category": "slot",
-      "tags": [
-        "warrior",
-        "mythology"
-      ],
-      "rtp_base": 96.8
-    },
-    {
-      "id": "conan",
-      "name_en": "Conan",
-      "original_id": "d840ff81-5ba9-438f-ad25-6776c083fa7e",
-      "image": "/images/games/mega888/conan.png",
-      "category": "slot",
-      "tags": [
-        "warrior",
-        "action"
-      ],
-      "rtp_base": 97
-    },
-    {
-      "id": "misquerade-amuse",
-      "name_en": "Masquerade Amuse",
-      "original_id": "d8135a48-ae4e-45cb-aeb2-897a261f443b",
-      "image": "/images/games/mega888/misquerade-amuse.png",
-      "category": "slot",
-      "tags": [
-        "fantasy",
-        "mystery"
-      ],
-      "rtp_base": 96.7
-    },
-    {
-      "id": "fortune-cat",
-      "name_en": "Fortune Cat",
-      "original_id": "d61051a5-ed37-4acc-8ba3-d1547097c10b",
-      "image": "/images/games/mega888/fortune-cat.png",
-      "category": "slot",
-      "tags": [
-        "asian",
-        "cat"
-      ],
-      "rtp_base": 97.5
-    },
-    {
-      "id": "white-riches",
-      "name_en": "White Riches",
-      "original_id": "d97444e1-9ce1-4220-8464-654fd9646521",
-      "image": "/images/games/mega888/white-riches.png",
-      "category": "slot",
-      "tags": [
-        "christmas",
-        "riches"
-      ],
-      "rtp_base": 96.7
-    },
-    {
-      "id": "deirdry",
-      "name_en": "Deirdry",
-      "original_id": "d195596a-684e-4824-86eb-e9ae36bcf51f",
-      "image": "/images/games/mega888/deirdry.png",
-      "category": "slot",
-      "tags": [
-        "irish",
-        "classic"
-      ],
-      "rtp_base": 96.4
-    },
-    {
-      "id": "robin-hood-shifting-riches",
-      "name_en": "Robin Hood Shifting Riches",
-      "original_id": "db6ec911-f8fa-433f-9811-942fb29b8917",
-      "image": "/images/games/mega888/robin-hood-shifting-riches.png",
-      "category": "slot",
-      "tags": [
-        "adventure",
-        "archer"
-      ],
-      "rtp_base": 96.6
-    },
-    {
-      "id": "jungle-spirit",
-      "name_en": "Jungle Spirit",
-      "original_id": "dbc78027-5cd5-402e-97b2-b35b90d4f1e9",
-      "image": "/images/games/mega888/jungle-spirit.png",
-      "category": "slot",
-      "tags": [
-        "jungle",
-        "wild"
-      ],
-      "rtp_base": 96
-    },
-    {
-      "id": "cheeky-fish",
-      "name_en": "Cheeky Fish",
-      "original_id": "ddad75f8-a946-4cb3-9520-304462fcb42e",
-      "image": "/images/games/mega888/cheeky-fish.png",
-      "category": "slot",
-      "tags": [
-        "ocean",
-        "shark"
-      ],
-      "rtp_base": 97.3
-    },
-    {
-      "id": "sticky-bandits",
-      "name_en": "Sticky Bandits Wild Return",
-      "original_id": "e12b9238-bc0c-45f7-bc0f-4a8281e67d21",
-      "image": "/images/games/mega888/sticky-bandits.png",
-      "category": "slot",
-      "tags": [
-        "western",
-        "action"
-      ],
-      "rtp_base": 96.2
-    },
-    {
-      "id": "johan-pond-of-riches",
-      "name_en": "Johan's Pond of Riches",
-      "original_id": "e38eb912-a8e4-4b7d-ac31-05054e862435",
-      "image": "/images/games/mega888/johan-pond-of-riches.png",
-      "category": "slot",
-      "tags": [
-        "nordic",
-        "treasure"
-      ],
-      "rtp_base": 97
-    },
-    {
-      "id": "epic-gems",
-      "name_en": "Epic Gems",
-      "original_id": "e60c34e7-7119-4b75-9351-8e971ae237fe",
-      "image": "/images/games/mega888/epic-gems.png",
-      "category": "slot",
-      "tags": [
-        "gem",
-        "fantasy"
-      ],
-      "rtp_base": 97.1
-    },
-    {
-      "id": "lost-island",
-      "name_en": "Lost Island",
-      "original_id": "e74dfb1d-80a0-4952-83d1-c733d206bf77",
-      "image": "/images/games/mega888/lost-island.png",
-      "category": "slot",
-      "tags": [
-        "adventure",
-        "island"
-      ],
-      "rtp_base": 97.1
-    },
-    {
-      "id": "merry-xmas",
-      "name_en": "Merry Xmas",
-      "original_id": "e42968af-245c-4603-b7dd-edb8062128ae",
-      "image": "/images/games/mega888/merry-xmas.png",
-      "category": "slot",
-      "tags": [
-        "christmas",
-        "holiday"
-      ],
-      "rtp_base": 97.2
-    },
-    {
-      "id": "roulette2",
-      "name_en": "Roulette",
-      "original_id": "ed43d0e0-23d2-45e9-aee0-ae29953206ed",
-      "image": "/images/games/mega888/roulette2.png",
-      "category": "live",
-      "tags": [
-        "table",
-        "live"
-      ],
+      "tags": [],
       "rtp_base": 96.5
     },
     {
-      "id": "sparta-wars",
-      "name_en": "Sparta Wars",
-      "original_id": "ef171140-6acb-4ead-ab83-7124f7a39f7e",
-      "image": "/images/games/mega888/sparta-wars.png",
+      "id": "spartan",
+      "name_en": "Spartan",
+      "original_id": "imgi_113_spartan",
+      "image": "/images/games/mega888/spartan.jpg",
       "category": "slot",
-      "tags": [
-        "warrior",
-        "mythology"
-      ],
-      "rtp_base": 96.8
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
-      "id": "slot-4d",
-      "name_en": "Slot 4D",
-      "original_id": "f381ddf4-3b15-4a87-895c-30d65138b97c",
-      "image": "/images/games/mega888/slot-4d.png",
+      "id": "steam-tower",
+      "name_en": "Steam Tower",
+      "original_id": "imgi_114_steamtower",
+      "image": "/images/games/mega888/steam-tower.jpg",
       "category": "slot",
-      "tags": [
-        "lottery",
-        "asian"
-      ],
-      "rtp_base": 96.6
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
-      "id": "reel-classic",
-      "name_en": "Reel Classic 777",
-      "original_id": "f4554dff-f806-48d2-be16-2c6a50d5ae71",
-      "image": "/images/games/mega888/reel-classic.png",
+      "id": "sticky-bandits",
+      "name_en": "Sticky Bandits",
+      "original_id": "imgi_115_stickybandits",
+      "image": "/images/games/mega888/sticky-bandits.jpg",
       "category": "slot",
-      "tags": [
-        "classic",
-        "retro"
-      ],
-      "rtp_base": 96.6
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "striper-night",
+      "name_en": "Striper Night",
+      "original_id": "imgi_116_stripernight",
+      "image": "/images/games/mega888/striper-night.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "sun-wukong",
+      "name_en": "Sun Wukong",
+      "original_id": "imgi_117_sunwukong",
+      "image": "/images/games/mega888/sun-wukong.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "super-ace",
+      "name_en": "Super Ace",
+      "original_id": "imgi_118_superace",
+      "image": "/images/games/mega888/super-ace.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "sushi-oishi",
+      "name_en": "Sushi Oishi",
+      "original_id": "imgi_119_sushioishi",
+      "image": "/images/games/mega888/sushi-oishi.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "5-dragons",
+      "name_en": "5 Dragons",
+      "original_id": "imgi_11_5dragons",
+      "image": "/images/games/mega888/5-dragons.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "sword-of-khans",
+      "name_en": "Sword of Khans",
+      "original_id": "imgi_120_swordofkhans",
+      "image": "/images/games/mega888/sword-of-khans.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "tally-ho",
+      "name_en": "Tally Ho",
+      "original_id": "imgi_121_tallyho",
+      "image": "/images/games/mega888/tally-ho.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "temple-of-wealth",
+      "name_en": "Temple of Wealth",
+      "original_id": "imgi_122_templeofwealth",
+      "image": "/images/games/mega888/temple-of-wealth.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "temple-quest",
+      "name_en": "Temple Quest",
+      "original_id": "imgi_123_templequest",
+      "image": "/images/games/mega888/temple-quest.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "thai-paradise",
+      "name_en": "Thai Paradise",
+      "original_id": "imgi_124_thaiparadise",
+      "image": "/images/games/mega888/thai-paradise.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "three-kingdoms",
+      "name_en": "Three Kingdoms",
+      "original_id": "imgi_125_threekingdoms",
+      "image": "/images/games/mega888/three-kingdoms.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "tiger-fortune",
+      "name_en": "Tiger Fortune",
+      "original_id": "imgi_126_tigerfortune",
+      "image": "/images/games/mega888/tiger-fortune.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "tigers-glory",
+      "name_en": "Tigers Glory",
+      "original_id": "imgi_127_tigersclory",
+      "image": "/images/games/mega888/tigers-glory.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "triple-twister",
+      "name_en": "Triple Twister",
+      "original_id": "imgi_128_tripletwister",
+      "image": "/images/games/mega888/triple-twister.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "vegas-nightlife",
+      "name_en": "Vegas Nightlife",
+      "original_id": "imgi_129_vegasnightlife",
+      "image": "/images/games/mega888/vegas-nightlife.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "5-fortune",
+      "name_en": "5 Fortune",
+      "original_id": "imgi_12_5fortune",
+      "image": "/images/games/mega888/5-fortune.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "wang-chai",
+      "name_en": "Wang Chai",
+      "original_id": "imgi_130_wangchai",
+      "image": "/images/games/mega888/wang-chai.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "water-margin",
+      "name_en": "Water Margin",
+      "original_id": "imgi_131_watermargin",
+      "image": "/images/games/mega888/water-margin.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "wild-fireworks",
+      "name_en": "Wild Fireworks",
+      "original_id": "imgi_132_wildfireworks",
+      "image": "/images/games/mega888/wild-fireworks.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
       "id": "wolf-hunters",
       "name_en": "Wolf Hunters",
-      "original_id": "f7900b15-8d16-4b3e-9977-555cd0c19324",
-      "image": "/images/games/mega888/wolf-hunters.png",
+      "original_id": "imgi_133_wolfhunters",
+      "image": "/images/games/mega888/wolf-hunters.jpg",
       "category": "slot",
-      "tags": [
-        "wolf",
-        "wild"
-      ],
-      "rtp_base": 97.5
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
-      "id": "monkey-fever",
-      "name_en": "Monkey Fever",
-      "original_id": "fa2b700c-ab08-44c0-9796-7fca089d2d21",
-      "image": "/images/games/mega888/monkey-fever.png",
+      "id": "xmas-magic",
+      "name_en": "Xmas Magic",
+      "original_id": "imgi_134_xmasmagic",
+      "image": "/images/games/mega888/xmas-magic.jpg",
       "category": "slot",
-      "tags": [
-        "monkey",
-        "fun"
-      ],
-      "rtp_base": 96.7
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
-      "id": "crazy-7",
-      "name_en": "Crazy 7",
-      "original_id": "fba06146-0f52-4c5d-ba9a-b4f0f4b40c54",
-      "image": "/images/games/mega888/crazy-7.png",
+      "id": "yin-yang",
+      "name_en": "Yin Yang",
+      "original_id": "imgi_135_yinyang",
+      "image": "/images/games/mega888/yin-yang.jpg",
       "category": "slot",
-      "tags": [
-        "classic",
-        "lucky"
-      ],
-      "rtp_base": 96.4
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
-      "id": "mahjong-crazy",
-      "name_en": "Mahjong Crazy",
-      "original_id": "fd4f8c80-2b32-4813-81d0-7c21f2c1df44",
-      "image": "/images/games/mega888/mahjong-crazy.png",
+      "id": "zhao-cai-jin-bao",
+      "name_en": "Zhao Cai Jin Bao",
+      "original_id": "imgi_136_zhaocaijinbao",
+      "image": "/images/games/mega888/zhao-cai-jin-bao.jpg",
       "category": "slot",
-      "tags": [
-        "mahjong",
-        "asian"
-      ],
-      "rtp_base": 97.3
+      "tags": [],
+      "rtp_base": 96.5
     },
     {
-      "id": "fortune-fireworks",
-      "name_en": "Fortune Fireworks",
-      "original_id": "ff3d760b-01fb-48bd-8432-a1e37b87b97b",
-      "image": "/images/games/mega888/fortune-fireworks.png",
+      "id": "zombie-carnival",
+      "name_en": "Zombie Carnival",
+      "original_id": "imgi_137_zombiecarnival",
+      "image": "/images/games/mega888/zombie-carnival.jpg",
       "category": "slot",
-      "tags": [
-        "festival",
-        "bonus"
-      ],
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "zombie-circus",
+      "name_en": "Zombie Circus",
+      "original_id": "imgi_138_zombiecircus",
+      "image": "/images/games/mega888/zombie-circus.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "age-nt51",
+      "name_en": "Age Nt51",
+      "original_id": "imgi_13_agent51",
+      "image": "/images/games/mega888/age-nt51.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "amazingthailand",
+      "name_en": "Amazingthailand",
+      "original_id": "imgi_14_amazingthailand",
+      "image": "/images/games/mega888/amazingthailand.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "beastofwealth",
+      "name_en": "Beastofwealth",
+      "original_id": "imgi_15_beastofwealth",
+      "image": "/images/games/mega888/beastofwealth.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "big-chef",
+      "name_en": "Big Chef",
+      "original_id": "imgi_16_bigchef",
+      "image": "/images/games/mega888/big-chef.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "big-prosperity",
+      "name_en": "Big Prosperity",
+      "original_id": "imgi_17_bigprosperity",
+      "image": "/images/games/mega888/big-prosperity.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "big-wincat",
+      "name_en": "Big Wincat",
+      "original_id": "imgi_18_bigwincat",
+      "image": "/images/games/mega888/big-wincat.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "blazeofra",
+      "name_en": "Blazeofra",
+      "original_id": "imgi_19_blazeofra",
+      "image": "/images/games/mega888/blazeofra.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "bonus-bears",
+      "name_en": "Bonus Bears",
+      "original_id": "imgi_20_bonusbears",
+      "image": "/images/games/mega888/bonus-bears.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "boxingking",
+      "name_en": "Boxingking",
+      "original_id": "imgi_21_boxingking",
+      "image": "/images/games/mega888/boxingking.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "boy-king",
+      "name_en": "Boy King",
+      "original_id": "imgi_22_boyking",
+      "image": "/images/games/mega888/boy-king.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "captainstreasure",
+      "name_en": "Captainstreasure",
+      "original_id": "imgi_23_captainstreasure",
+      "image": "/images/games/mega888/captainstreasure.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "cash-noire",
+      "name_en": "Cash Noire",
+      "original_id": "imgi_24_cashnoire",
+      "image": "/images/games/mega888/cash-noire.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "celebrationofwealth",
+      "name_en": "Celebrationofwealth",
+      "original_id": "imgi_25_celebrationofwealth",
+      "image": "/images/games/mega888/celebrationofwealth.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "championsofrome",
+      "name_en": "Championsofrome",
+      "original_id": "imgi_26_championsofrome",
+      "image": "/images/games/mega888/championsofrome.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "chargebuffalo",
+      "name_en": "Chargebuffalo",
+      "original_id": "imgi_27_chargebuffalo",
+      "image": "/images/games/mega888/chargebuffalo.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "chinese-lion",
+      "name_en": "Chinese Lion",
+      "original_id": "imgi_28_chineselion",
+      "image": "/images/games/mega888/chinese-lion.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "chinese-new-year",
+      "name_en": "Chinese New Year",
+      "original_id": "imgi_29_chinesenewyear",
+      "image": "/images/games/mega888/chinese-new-year.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "clashofthebeasts",
+      "name_en": "Clashofthebeasts",
+      "original_id": "imgi_30_clashofthebeasts",
+      "image": "/images/games/mega888/clashofthebeasts.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "cleopatrasriches",
+      "name_en": "Cleopatrasriches",
+      "original_id": "imgi_31_cleopatrasriches",
+      "image": "/images/games/mega888/cleopatrasriches.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "conan",
+      "name_en": "Conan",
+      "original_id": "imgi_32_conan",
+      "image": "/images/games/mega888/conan.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "dark-vortex",
+      "name_en": "Dark Vortex",
+      "original_id": "imgi_33_darkvortex",
+      "image": "/images/games/mega888/dark-vortex.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "dasixi",
+      "name_en": "Dasixi",
+      "original_id": "imgi_34_dasixi",
+      "image": "/images/games/mega888/dasixi.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "desertgem",
+      "name_en": "Desertgem",
+      "original_id": "imgi_35_desertgem",
+      "image": "/images/games/mega888/desertgem.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "dimsumprize",
+      "name_en": "Dimsumprize",
+      "original_id": "imgi_36_dimsumprize",
+      "image": "/images/games/mega888/dimsumprize.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "dolphin",
+      "name_en": "Dolphin",
+      "original_id": "imgi_37_dolphin",
+      "image": "/images/games/mega888/dolphin.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "dolphin-reef",
+      "name_en": "Dolphin Reef",
+      "original_id": "imgi_38_dolphinreef",
+      "image": "/images/games/mega888/dolphin-reef.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "dragon-hero",
+      "name_en": "Dragon Hero",
+      "original_id": "imgi_39_dragonhero",
+      "image": "/images/games/mega888/dragon-hero.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "dragon-maiden",
+      "name_en": "Dragon Maiden",
+      "original_id": "imgi_40_dragonmaiden",
+      "image": "/images/games/mega888/dragon-maiden.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "dragons-trike",
+      "name_en": "Dragons Trike",
+      "original_id": "imgi_41_dragonstrike",
+      "image": "/images/games/mega888/dragons-trike.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "dragon-z",
+      "name_en": "Dragon Z",
+      "original_id": "imgi_42_dragonz",
+      "image": "/images/games/mega888/dragon-z.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "drfortuno",
+      "name_en": "Drfortuno",
+      "original_id": "imgi_43_drfortuno",
+      "image": "/images/games/mega888/drfortuno.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "dwarfsgonewild",
+      "name_en": "Dwarfsgonewild",
+      "original_id": "imgi_44_dwarfsgonewild",
+      "image": "/images/games/mega888/dwarfsgonewild.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "emperor-gate",
+      "name_en": "Emperor Gate",
+      "original_id": "imgi_45_emperorgate",
+      "image": "/images/games/mega888/emperor-gate.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "encdancedgarden",
+      "name_en": "Encdancedgarden",
+      "original_id": "imgi_46_encdancedgarden",
+      "image": "/images/games/mega888/encdancedgarden.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "fartgirl",
+      "name_en": "Fartgirl",
+      "original_id": "imgi_47_fartgirl",
+      "image": "/images/games/mega888/fartgirl.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "floatingdragon",
+      "name_en": "Floatingdragon",
+      "original_id": "imgi_48_floatingdragon",
+      "image": "/images/games/mega888/floatingdragon.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "fongshen",
+      "name_en": "Fongshen",
+      "original_id": "imgi_49_fongshen",
+      "image": "/images/games/mega888/fongshen.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "fortune-charm",
+      "name_en": "Fortune Charm",
+      "original_id": "imgi_50_fortunecharm",
+      "image": "/images/games/mega888/fortune-charm.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "fortune-fest",
+      "name_en": "Fortune Fest",
+      "original_id": "imgi_51_fortunefest",
+      "image": "/images/games/mega888/fortune-fest.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "fortune-fire-works",
+      "name_en": "Fortune Fire Works",
+      "original_id": "imgi_52_fortunefireworks",
+      "image": "/images/games/mega888/fortune-fire-works.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "fortune-gems2",
+      "name_en": "Fortune Gems2",
+      "original_id": "imgi_53_fortunegems2",
+      "image": "/images/games/mega888/fortune-gems2.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "fruitvscandy",
+      "name_en": "Fruitvscandy",
+      "original_id": "imgi_54_fruitvscandy",
+      "image": "/images/games/mega888/fruitvscandy.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "fruitytutti",
+      "name_en": "Fruitytutti",
+      "original_id": "imgi_55_fruitytutti",
+      "image": "/images/games/mega888/fruitytutti.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "glamourousworld",
+      "name_en": "Glamourousworld",
+      "original_id": "imgi_56_glamourousworld",
+      "image": "/images/games/mega888/glamourousworld.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "god-of-wealth",
+      "name_en": "God Of Wealth",
+      "original_id": "imgi_57_godofwealth",
+      "image": "/images/games/mega888/god-of-wealth.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "golden",
+      "name_en": "Golden",
+      "original_id": "imgi_58_golden",
+      "image": "/images/games/mega888/golden.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "golden-beauty",
+      "name_en": "Golden Beauty",
+      "original_id": "imgi_59_goldenbeauty",
+      "image": "/images/games/mega888/golden-beauty.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "golden-colts",
+      "name_en": "Golden Colts",
+      "original_id": "imgi_60_goldencolts",
+      "image": "/images/games/mega888/golden-colts.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "golden-lotus",
+      "name_en": "Golden Lotus",
+      "original_id": "imgi_61_goldenlotus",
+      "image": "/images/games/mega888/golden-lotus.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "golden-monkey",
+      "name_en": "Golden Monkey",
+      "original_id": "imgi_62_goldenmonkey",
+      "image": "/images/games/mega888/golden-monkey.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "golden-slut",
+      "name_en": "Golden Slut",
+      "original_id": "imgi_63_goldenslut",
+      "image": "/images/games/mega888/golden-slut.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "golden-tour",
+      "name_en": "Golden Tour",
+      "original_id": "imgi_64_goldentour",
+      "image": "/images/games/mega888/golden-tour.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "gold-rush",
+      "name_en": "Gold Rush",
+      "original_id": "imgi_65_goldrush",
+      "image": "/images/games/mega888/gold-rush.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "great88",
+      "name_en": "Great88",
+      "original_id": "imgi_66_great88",
+      "image": "/images/games/mega888/great88.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "greatblue",
+      "name_en": "Greatblue",
+      "original_id": "imgi_67_greatblue",
+      "image": "/images/games/mega888/greatblue.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "greatchina",
+      "name_en": "Greatchina",
+      "original_id": "imgi_68_greatchina",
+      "image": "/images/games/mega888/greatchina.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "greatstars",
+      "name_en": "Greatstars",
+      "original_id": "imgi_69_greatstars",
+      "image": "/images/games/mega888/greatstars.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "green-light",
+      "name_en": "Green Light",
+      "original_id": "imgi_70_greenlight",
+      "image": "/images/games/mega888/green-light.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "hanzosdojo",
+      "name_en": "Hanzosdojo",
+      "original_id": "imgi_71_hanzosdojo",
+      "image": "/images/games/mega888/hanzosdojo.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "highwayking",
+      "name_en": "Highwayking",
+      "original_id": "imgi_72_highwayking",
+      "image": "/images/games/mega888/highwayking.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "hotline",
+      "name_en": "Hotline",
+      "original_id": "imgi_73_hotline",
+      "image": "/images/games/mega888/hotline.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "housedoom",
+      "name_en": "Housedoom",
+      "original_id": "imgi_74_housedoom",
+      "image": "/images/games/mega888/housedoom.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "ice-land",
+      "name_en": "Ice Land",
+      "original_id": "imgi_75_iceland",
+      "image": "/images/games/mega888/ice-land.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "indianmyth",
+      "name_en": "Indianmyth",
+      "original_id": "imgi_76_indianmyth",
+      "image": "/images/games/mega888/indianmyth.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "irish-luck",
+      "name_en": "Irish Luck",
+      "original_id": "imgi_77_irishluck",
+      "image": "/images/games/mega888/irish-luck.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "japan-for-ture",
+      "name_en": "Japan For Ture",
+      "original_id": "imgi_78_japanforture",
+      "image": "/images/games/mega888/japan-for-ture.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "jinchans",
+      "name_en": "Jinchans",
+      "original_id": "imgi_79_jinchans",
+      "image": "/images/games/mega888/jinchans.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "jinglebells",
+      "name_en": "Jinglebells",
+      "original_id": "imgi_80_jinglebells",
+      "image": "/images/games/mega888/jinglebells.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "jinqianwa",
+      "name_en": "Jinqianwa",
+      "original_id": "imgi_81_jinqianwa",
+      "image": "/images/games/mega888/jinqianwa.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "juanandthejmmortalking",
+      "name_en": "Juanandthejmmortalking",
+      "original_id": "imgi_82_Juanandthejmmortalking",
+      "image": "/images/games/mega888/juanandthejmmortalking.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "jungle-spirit",
+      "name_en": "Jungle Spirit",
+      "original_id": "imgi_83_junglespirit",
+      "image": "/images/games/mega888/jungle-spirit.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "king-of-ghost-s",
+      "name_en": "King Of Ghost S",
+      "original_id": "imgi_84_kingofghosts",
+      "image": "/images/games/mega888/king-of-ghost-s.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "laura",
+      "name_en": "Laura",
+      "original_id": "imgi_85_laura",
+      "image": "/images/games/mega888/laura.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "legend",
+      "name_en": "Legend",
+      "original_id": "imgi_86_legend",
+      "image": "/images/games/mega888/legend.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "light-s",
+      "name_en": "Light S",
+      "original_id": "imgi_87_lights",
+      "image": "/images/games/mega888/light-s.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "lion-dance",
+      "name_en": "Lion Dance",
+      "original_id": "imgi_88_liondance",
+      "image": "/images/games/mega888/lion-dance.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "lostisland",
+      "name_en": "Lostisland",
+      "original_id": "imgi_89_lostisland",
+      "image": "/images/games/mega888/lostisland.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "lucky-koi",
+      "name_en": "Lucky Koi",
+      "original_id": "imgi_90_luckykoi",
+      "image": "/images/games/mega888/lucky-koi.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "lucky-littlegods",
+      "name_en": "Lucky Littlegods",
+      "original_id": "imgi_91_luckylittlegods",
+      "image": "/images/games/mega888/lucky-littlegods.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "lucky-new-year",
+      "name_en": "Lucky New Year",
+      "original_id": "imgi_92_luckynewyear",
+      "image": "/images/games/mega888/lucky-new-year.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "masquerade",
+      "name_en": "Masquerade",
+      "original_id": "imgi_93_masquerade",
+      "image": "/images/games/mega888/masquerade.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "matsuri",
+      "name_en": "Matsuri",
+      "original_id": "imgi_94_matsuri",
+      "image": "/images/games/mega888/matsuri.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "midas",
+      "name_en": "Midas",
+      "original_id": "imgi_95_midas",
+      "image": "/images/games/mega888/midas.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "niannianyouyu",
+      "name_en": "Niannianyouyu",
+      "original_id": "imgi_96_niannianyouyu",
+      "image": "/images/games/mega888/niannianyouyu.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "nitro",
+      "name_en": "Nitro",
+      "original_id": "imgi_97_nitro",
+      "image": "/images/games/mega888/nitro.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "panthermoon",
+      "name_en": "Panthermoon",
+      "original_id": "imgi_98_panthermoon",
+      "image": "/images/games/mega888/panthermoon.jpg",
+      "category": "slot",
+      "tags": [],
+      "rtp_base": 96.5
+    },
+    {
+      "id": "penguincity",
+      "name_en": "Penguincity",
+      "original_id": "imgi_99_penguincity",
+      "image": "/images/games/mega888/penguincity.jpg",
+      "category": "slot",
+      "tags": [],
       "rtp_base": 96.5
     }
   ],

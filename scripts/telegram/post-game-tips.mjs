@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-// Game Tips — 6 random slot games (2 per brand) fresh every post.
-// One of the 6 is picked as the image "spotlight" and named at the top of the
-// caption so the photo always matches a listed game.
+// Game Tips — matches user's MEGAJOM template format.
+// 6 random slot games (2 per brand). First picked game = Top Pick (image + spotlight).
 
 import { loadJson, sendMarkdownPhotoPost, md } from './_helpers.mjs';
 
@@ -24,18 +23,16 @@ function pickRandomGames() {
   return out;
 }
 
-function buildCaption(picks, spotlight) {
-  const spotlightBrand = BRAND_LABEL[spotlight.brand] ?? spotlight.brand;
-  const spotlightRtp = md(spotlight.rtp_base.toFixed(1));
-
+function buildCaption(picks, topGame, topBrand) {
   const lines = [
-    `*MEGAJOM\\.COM*`,
+    `🤖 *MEGAJOM*`,
     ``,
     `🔥 *GAME TIPS — HOT PICKS HARI INI*`,
     ``,
-    `🎯 *Top pick hari ini:* ${md(spotlight.name_en)} \\(${md(spotlightBrand)}\\) — RTP ${spotlightRtp}%`,
+    `🎯 *Top pick hari ini:* 🔥${md(BRAND_LABEL[topBrand])}`,
+    `⭐️ *${md(topGame.name_en)}* — RTP ${md(topGame.rtp_base.toFixed(1))}%`,
     ``,
-    `🧩 *Mega888 · 918Kiss · Pussy888 Tips*`,
+    `💡 *Mega888 · 918Kiss · Pussy888 Tips*`,
     ``,
     `6 permainan terkini:`,
     ``,
@@ -45,38 +42,35 @@ function buildCaption(picks, spotlight) {
     lines.push(`${KEYCAPS[brand]} *${BRAND_LABEL[brand]}*`);
     for (const g of picks[brand]) {
       const rtp = md(g.rtp_base.toFixed(1));
-      const star = g.id === spotlight.id && g.brand === spotlight.brand ? '⭐ ' : '🔥 ';
-      lines.push(`${star}${md(g.name_en)} — RTP ${rtp}%`);
+      lines.push(`🔥 ${md(g.name_en)} — RTP ${rtp}%`);
     }
     lines.push('');
   }
 
   lines.push(
     `🏆 Pilih RTP tinggi \\+ strategi betul untuk maksimumkan cuci harian anda\\.`,
-    ``,
-    `🚨 Klik butang di bawah untuk strategi penuh setiap permainan\\.`,
   );
+
   return lines.join('\n');
 }
 
 async function main() {
   const picks = pickRandomGames();
-  // Inject brand label into each picked game so we can identify spotlight cleanly
-  for (const brand of Object.keys(picks)) {
-    for (const g of picks[brand]) g.brand = brand;
-  }
   const featured = [...picks.mega888, ...picks.kiss918, ...picks.pussy888];
   if (featured.length === 0) throw new Error('No slot games found');
 
-  // Pick one of the 6 at random as the spotlight (image + top-of-caption mention)
-  const spotlight = featured[Math.floor(Math.random() * featured.length)];
+  // Top pick = highest RTP among the 6
+  const top = [...featured].sort((a, b) => b.rtp_base - a.rtp_base)[0];
+  const topBrand = ['mega888', 'kiss918', 'pussy888'].find((b) =>
+    picks[b].some((g) => g.id === top.id),
+  );
 
-  const caption = buildCaption(picks, spotlight);
+  const caption = buildCaption(picks, top, topBrand);
   const result = await sendMarkdownPhotoPost({
-    imagePath: spotlight.image,
+    imagePath: top.image,
     caption,
   });
-  console.log(`✅ Posted game-tips #${result.message_id} spotlight=${spotlight.name_en} (${spotlight.brand})`);
+  console.log(`✅ Posted game-tips #${result.message_id} — top pick: ${top.name_en} (${topBrand})`);
 }
 
 main().catch((err) => {

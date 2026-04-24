@@ -31,8 +31,7 @@ function standardButtons() {
   return {
     inline_keyboard: [
       [
-        { text: '💰 Money Site', url: CTA.moneySite },
-        { text: '📊 Game Tips', url: CTA.gameTips },
+        { text: '🤖 MEGAJOM', url: CTA.moneySite },
       ],
     ],
   };

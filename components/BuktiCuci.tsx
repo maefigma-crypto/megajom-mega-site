@@ -11,7 +11,7 @@ export default function BuktiCuci() {
   for (const g of allGames()) gamesIndex[g.id] = g;
 
   return (
-    <section className="mx-auto max-w-6xl px-4 py-12 md:py-16">
+    <section id="bukti-cuci" className="mx-auto max-w-6xl px-4 py-12 md:py-16 scroll-mt-20">
       <div className="mb-8 text-center">
         <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-[color:var(--border)] bg-black/40 px-3 py-1 text-xs uppercase tracking-wider text-[color:var(--gold)]">
           <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />

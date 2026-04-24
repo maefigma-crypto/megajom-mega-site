@@ -69,10 +69,9 @@ export default function PromotionSection() {
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {PROMOS.map((p) => (
-          <a
+          <div
             key={p.title}
-            href={SITE.ocs8SignupUrl}
-            className="card group relative overflow-hidden transition hover:-translate-y-1 hover:border-[color:var(--orange)]"
+            className="card group flex flex-col overflow-hidden transition hover:-translate-y-1 hover:border-[color:var(--orange)]"
           >
             <div className="aspect-[4/3] overflow-hidden bg-[color:var(--bg-3)]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -83,17 +82,20 @@ export default function PromotionSection() {
                 className="h-full w-full object-cover transition group-hover:scale-105"
               />
             </div>
-            <div className="p-4">
+            <div className="flex flex-1 flex-col p-4">
               <div className="text-[10px] uppercase tracking-widest text-[color:var(--cyan)]">
                 {p.tagline}
               </div>
               <div className="mt-1 text-base font-bold text-white leading-tight">{p.title}</div>
-              <p className="mt-2 text-xs text-[color:var(--text-dim)]">{p.body}</p>
-              <div className="mt-3 inline-flex items-center gap-1 rounded-full bg-[color:var(--orange)]/20 px-2.5 py-1 text-[10px] font-bold text-[color:var(--orange-2)]">
-                🤖 Claim via MEGAJOM →
-              </div>
+              <p className="mt-2 flex-1 text-xs text-[color:var(--text-dim)]">{p.body}</p>
+              <a
+                href={SITE.ocs8SignupUrl}
+                className="btn-primary mt-4 w-full !py-2.5 text-sm"
+              >
+                <span>🤖</span> Claim via MEGAJOM
+              </a>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </section>

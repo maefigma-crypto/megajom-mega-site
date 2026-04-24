@@ -31,11 +31,11 @@ const BRANDS = [
   {
     key: 'mega888',
     label: 'Mega888',
+    logo: '/logos/mega888.png',
     tagline: 'Malaysia\'s #1 slot platform',
-    gradient: 'from-yellow-500 via-orange-500 to-red-600',
-    accent: 'border-yellow-500',
-    badge: 'bg-yellow-500 text-black',
-    iconBg: 'bg-yellow-500',
+    bg: 'from-sky-500/30 via-blue-600/20 to-transparent',
+    accent: 'border-sky-500/60 hover:border-sky-400',
+    badge: 'bg-sky-500 text-white',
     downloads: {
       android: 'https://t.me/jommega_bot?start=adlinkjomcuci',
       ios: '/download/ios/',
@@ -44,11 +44,11 @@ const BRANDS = [
   {
     key: 'kiss918',
     label: '918Kiss',
+    logo: '/logos/918kiss.png',
     tagline: 'Legendary slot brand since 2018',
-    gradient: 'from-red-500 via-rose-600 to-pink-700',
-    accent: 'border-red-500',
+    bg: 'from-red-500/30 via-rose-600/20 to-transparent',
+    accent: 'border-red-500/60 hover:border-red-400',
     badge: 'bg-red-600 text-white',
-    iconBg: 'bg-red-600',
     downloads: {
       android: 'https://t.me/jommega_bot?start=adlinkjomcuci',
       ios: '/download/ios/',
@@ -57,11 +57,11 @@ const BRANDS = [
   {
     key: 'pussy888',
     label: 'Pussy888',
+    logo: '/logos/pussy888.png',
     tagline: 'Premium live & slot experience',
-    gradient: 'from-purple-500 via-fuchsia-600 to-pink-600',
-    accent: 'border-purple-500',
+    bg: 'from-purple-500/30 via-fuchsia-600/20 to-transparent',
+    accent: 'border-purple-500/60 hover:border-purple-400',
     badge: 'bg-purple-600 text-white',
-    iconBg: 'bg-purple-600',
     downloads: {
       android: 'https://t.me/jommega_bot?start=adlinkjomcuci',
       ios: '/download/ios/',
@@ -121,16 +121,18 @@ export default function DownloadPage() {
           {BRANDS.map((b) => (
             <div
               key={b.key}
-              className={`card overflow-hidden border-2 ${b.accent}`}
+              className={`card overflow-hidden border-2 transition ${b.accent}`}
             >
-              <div className={`bg-gradient-to-br ${b.gradient} p-6 text-center`}>
-                <div className="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-2xl bg-black/30 text-3xl font-black text-white backdrop-blur">
-                  {b.label.charAt(0)}
+              <div className={`bg-gradient-to-br ${b.bg} px-6 py-8 text-center`}>
+                <div className="mx-auto flex h-28 items-center justify-center">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={b.logo}
+                    alt={`${b.label} logo`}
+                    className="h-full w-auto max-w-full object-contain drop-shadow-xl"
+                  />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight drop-shadow">
-                  {b.label}
-                </h2>
-                <p className="mt-1 text-xs text-white/90">{b.tagline}</p>
+                <p className="mt-3 text-xs text-[color:var(--text-dim)]">{b.tagline}</p>
               </div>
 
               <div className="p-5 space-y-3">

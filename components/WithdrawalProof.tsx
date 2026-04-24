@@ -1,4 +1,7 @@
-import { todayWithdrawals } from '@/lib/data';
+'use client';
+
+import { useEffect, useState } from 'react';
+import { withdrawals, type WithdrawalProof } from '@/lib/data';
 import { BRAND_LABEL, SITE } from '@/lib/site';
 
 function fmtRM(n: number) {
@@ -11,15 +14,56 @@ function fmtDuration(s: number) {
   return mins > 0 ? `${mins} min ${secs}s` : `${secs}s`;
 }
 
-export default function WithdrawalProof() {
-  const entries = todayWithdrawals(3);
+function fmtClock(date: Date) {
+  // Always format in MYT regardless of viewer's timezone
+  return date.toLocaleTimeString('en-GB', {
+    timeZone: 'Asia/Kuala_Lumpur',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  });
+}
+
+// Produce 3 rendered entries with timestamps staggered within the last 3 hours of MYT.
+function computeCards(): Array<WithdrawalProof & { submitDisplay: string; approvalDisplay: string }> {
+  const now = new Date();
+  // Pick 3 deterministic source entries by hour-of-day
+  const myHour = Number(
+    now.toLocaleString('en-US', { timeZone: 'Asia/Kuala_Lumpur', hour: '2-digit', hour12: false }),
+  );
+  const baseIdx = myHour * 3;
+  const picks = [0, 1, 2].map((i) => withdrawals[(baseIdx + i) % withdrawals.length]);
+
+  // Stagger the 3 cards: most recent ~5 min ago, oldest ~90 min ago
+  const minuteOffsets = [6, 34, 78];
+  return picks.map((entry, i) => {
+    const approvalAt = new Date(now.getTime() - minuteOffsets[i] * 60 * 1000);
+    const submitAt = new Date(approvalAt.getTime() - entry.duration_seconds * 1000);
+    return {
+      ...entry,
+      submitDisplay: fmtClock(submitAt),
+      approvalDisplay: fmtClock(approvalAt),
+    };
+  });
+}
+
+export default function WithdrawalProofSection() {
+  const [entries, setEntries] = useState<ReturnType<typeof computeCards>>([]);
+
+  useEffect(() => {
+    setEntries(computeCards());
+    // Recompute every 2 minutes so timestamps stay fresh
+    const id = setInterval(() => setEntries(computeCards()), 120_000);
+    return () => clearInterval(id);
+  }, []);
 
   return (
     <section className="mx-auto max-w-6xl px-4 py-12 md:py-16">
       <div className="mb-8 text-center">
-        <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-[color:var(--border)] bg-black/40 px-3 py-1 text-xs uppercase tracking-wider text-[color:var(--gold)]">
+        <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-[color:var(--border)] bg-black/40 px-3 py-1 text-xs uppercase tracking-wider text-[color:var(--orange)]">
           <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-          Cuci laju · approved payouts
+          Cuci Laju · Approved Payouts
         </div>
         <h2 className="section-title">
           <span className="gold-text">Withdrawal Proof</span> — Bukti Bayar
@@ -65,13 +109,13 @@ export default function WithdrawalProof() {
                   <dt className="text-[10px] uppercase tracking-wider text-[color:var(--text-dim)]">
                     Submit
                   </dt>
-                  <dd className="mt-1 font-mono text-sm">{e.submit_time}</dd>
+                  <dd className="mt-1 font-mono text-sm">{e.submitDisplay}</dd>
                 </div>
                 <div className="p-3 text-center">
                   <dt className="text-[10px] uppercase tracking-wider text-[color:var(--text-dim)]">
                     Approved
                   </dt>
-                  <dd className="mt-1 font-mono text-sm text-emerald-300">{e.approval_time}</dd>
+                  <dd className="mt-1 font-mono text-sm text-emerald-300">{e.approvalDisplay}</dd>
                 </div>
               </dl>
 
@@ -80,13 +124,13 @@ export default function WithdrawalProof() {
                   <div className="text-[10px] uppercase tracking-wider text-[color:var(--text-dim)]">
                     Processing
                   </div>
-                  <div className="font-mono text-base font-bold text-[color:var(--gold)]">
+                  <div className="font-mono text-base font-bold text-[color:var(--orange)]">
                     ⚡ {fmtDuration(e.duration_seconds)}
                   </div>
                 </div>
                 <a
                   href={SITE.ocs8SignupUrl}
-                  className="inline-flex items-center rounded-md bg-gradient-to-b from-yellow-300 to-yellow-500 px-3 py-1.5 text-xs font-bold text-black transition hover:brightness-110"
+                  className="inline-flex items-center rounded-md bg-gradient-to-b from-orange-400 to-orange-600 px-3 py-1.5 text-xs font-bold text-white transition hover:brightness-110"
                 >
                   Daftar →
                 </a>

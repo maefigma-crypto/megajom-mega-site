@@ -1,15 +1,10 @@
-name: Telegram Auto-Posting
+name: Telegram Auto-Posting (manual only)
+
+# Scheduling handled by droplet cron at /opt/megajom-autopost/cron-run.sh
+# This workflow only runs on manual dispatch — GitHub's scheduler was skipping runs
+# too often to be reliable.
 
 on:
-  schedule:
-    # All cron times UTC. Malaysia = UTC+8.
-    # Game Tips — 12am, 6am, 12pm, 6pm MYT = UTC 16,22,4,10
-    - cron: '0 4,10,16,22 * * *'
-    # Bukti Cuci — 10 other hours (MYT 1am,3am,7am,9am,11am,1pm,3pm,5pm,7pm,9pm)
-    - cron: '0 17,19,23,1,3,5,7,9,11,13 * * *'
-    # Withdrawal Proof — 10 remaining hours (MYT 2am,4am,5am,8am,10am,2pm,4pm,8pm,10pm,11pm)
-    - cron: '0 18,20,21,0,2,6,8,12,14,15 * * *'
-
   workflow_dispatch:
     inputs:
       post_type:
@@ -31,28 +26,10 @@ jobs:
         with:
           node-version: 20
 
-      - name: Decide script
-        id: decide
-        shell: bash
-        env:
-          MANUAL_INPUT: ${{ github.event.inputs.post_type }}
-          CRON: ${{ github.event.schedule }}
-        run: |
-          if [ -n "$MANUAL_INPUT" ]; then
-            echo "script=post-${MANUAL_INPUT}.mjs" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          case "$CRON" in
-            "0 4,10,16,22 * * *")                          echo "script=post-game-tips.mjs" >> "$GITHUB_OUTPUT" ;;
-            "0 17,19,23,1,3,5,7,9,11,13 * * *")            echo "script=post-bukti-cuci.mjs" >> "$GITHUB_OUTPUT" ;;
-            "0 18,20,21,0,2,6,8,12,14,15 * * *")           echo "script=post-withdrawal-proof.mjs" >> "$GITHUB_OUTPUT" ;;
-            *)                                              echo "script=post-bukti-cuci.mjs" >> "$GITHUB_OUTPUT" ;;
-          esac
-
       - name: Send Telegram post
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
           MONEY_SITE_URL: ${{ secrets.MONEY_SITE_URL }}
           GAME_TIPS_URL: ${{ secrets.GAME_TIPS_URL }}
-        run: node scripts/telegram/${{ steps.decide.outputs.script }}
+        run: node scripts/telegram/post-${{ github.event.inputs.post_type }}.mjs

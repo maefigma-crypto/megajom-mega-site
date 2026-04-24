@@ -11,13 +11,13 @@ const NAV = [
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-[color:var(--border)] bg-[color:var(--bg)]/85 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 md:h-24">
         <Link href="/" className="flex items-center" aria-label="MEGAJOM Home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logos/logo.png"
             alt="MEGAJOM"
-            className="h-12 w-auto md:h-14"
+            className="h-16 w-auto md:h-20 lg:h-24"
           />
         </Link>
 

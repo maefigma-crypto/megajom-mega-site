@@ -6,11 +6,23 @@ import { BRAND_LABEL, SITE } from '@/lib/site';
 
 type Brand = 'all' | 'mega888' | 'kiss918' | 'pussy888';
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+function fmtDateLabel(day: number) {
+  // Map the daily-tips "day" (1-30) to a date label in the current month.
+  const now = new Date();
+  // Use current month for tips 1..todayNumber, previous month for tips after today.
+  const today = now.getDate();
+  const monthIdx = day <= today ? now.getMonth() : (now.getMonth() + 11) % 12;
+  return `${day} ${MONTHS[monthIdx]}`;
+}
+
 type Enriched = DailyTip & {
   game_name: string;
   game_image: string;
   game_category: string;
   tags: string[];
+  resolvedBrand: string;
 };
 
 export default function TipsSearch({
@@ -44,6 +56,7 @@ export default function TipsSearch({
           game_image: g?.image ?? '',
           game_category: g?.category ?? 'slot',
           tags: g?.tags ?? [],
+          resolvedBrand: g?.brand ?? t.brand,
         };
       }),
     [tips, gamesByKey, gamesByBrand],
@@ -56,7 +69,7 @@ export default function TipsSearch({
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return enriched.filter((t) => {
-      if (brand !== 'all' && t.brand !== brand) return false;
+      if (brand !== 'all' && t.resolvedBrand !== brand) return false;
       if (!q) return true;
       return (
         t.game_name.toLowerCase().includes(q) ||
@@ -99,7 +112,7 @@ export default function TipsSearch({
           Showing {filtered.length} of {enriched.length} tips.
           {todayNumber && (
             <>
-              {' '}Today&apos;s featured tip is Day {todayNumber}.
+              {' '}Today&apos;s featured tip is for {fmtDateLabel(todayNumber)}.
             </>
           )}
         </div>
@@ -145,12 +158,12 @@ export default function TipsSearch({
                       </span>
                     )}
                     <span className="text-xs uppercase tracking-widest text-[color:var(--gold)]">
-                      Day {t.day}
+                      {fmtDateLabel(t.day)}
                     </span>
                   </div>
                   <h3 className="mt-1 text-lg font-bold">{t.game_name}</h3>
                   <div className="text-xs text-[color:var(--text-dim)]">
-                    {BRAND_LABEL[t.brand] ?? t.brand} • {t.game_category}
+                    {BRAND_LABEL[t.resolvedBrand] ?? t.resolvedBrand} • {t.game_category}
                   </div>
                 </div>
               </div>

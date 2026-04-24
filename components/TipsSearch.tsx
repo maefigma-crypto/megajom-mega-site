@@ -16,16 +16,28 @@ type Enriched = DailyTip & {
 export default function TipsSearch({
   tips,
   gamesByKey,
+  gamesByBrand,
   todayNumber,
 }: {
   tips: DailyTip[];
   gamesByKey: Record<string, Game & { brand: string }>;
+  gamesByBrand: Record<string, Array<Game & { brand: string }>>;
   todayNumber: number;
 }) {
   const enriched: Enriched[] = useMemo(
     () =>
       tips.map((t) => {
-        const g = gamesByKey[t.game];
+        let g = gamesByKey[t.game];
+        // Fallback: tip references a game slug that no longer exists in games.json.
+        // Substitute with a deterministic game from the same brand so the card still
+        // renders with a real image — keep the original tip text intact.
+        if (!g) {
+          const pool = gamesByBrand[t.brand] ?? [];
+          if (pool.length > 0) {
+            const idx = (t.day * 17 + t.game.length) % pool.length;
+            g = pool[idx];
+          }
+        }
         return {
           ...t,
           game_name: g?.name_en ?? t.game,
@@ -34,7 +46,7 @@ export default function TipsSearch({
           tags: g?.tags ?? [],
         };
       }),
-    [tips, gamesByKey],
+    [tips, gamesByKey, gamesByBrand],
   );
 
   const [query, setQuery] = useState('');

@@ -3,20 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --bg: #0a0612;
-  --bg-2: #130a1f;
-  --bg-3: #1c1030;
-  --gold: #f5c542;
-  --gold-2: #ffdf6b;
+  /* Deep navy-blue backgrounds to pair with logo's cyan + orange */
+  --bg: #061826;
+  --bg-2: #0a2236;
+  --bg-3: #13334d;
+  /* Brand: keep --gold name for backward compat but now = bright orange from logo */
+  --gold: #ff8a3d;
+  --gold-2: #ffb36b;
+  /* Cyan accent = logo's "Mega" color */
+  --cyan: #4fc3f7;
+  --cyan-2: #81d4fa;
+  /* Accent orange (alias) */
+  --orange: #ff8a3d;
+  --orange-2: #ffb36b;
   --red: #e22a3a;
   --green: #23c45e;
-  --text: #f5f1ea;
-  --text-dim: #b3a9c0;
-  --border: #2a1a3f;
+  --text: #f1f8ff;
+  --text-dim: #9cb7cc;
+  --border: #1e3a5a;
 }
 
 html, body {
-  background: radial-gradient(circle at 20% 0%, #2a0f3f 0%, var(--bg) 55%) fixed;
+  background: radial-gradient(circle at 20% 0%, #123c5c 0%, var(--bg) 55%) fixed;
   color: var(--text);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -28,12 +36,26 @@ html, body {
   -webkit-text-fill-color: transparent;
 }
 
+.cyan-text {
+  background: linear-gradient(180deg, var(--cyan-2), var(--cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .btn-primary {
-  @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-3 font-bold text-black transition;
-  background: linear-gradient(180deg, var(--gold-2), var(--gold));
-  box-shadow: 0 4px 16px rgba(245, 197, 66, 0.3);
+  @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-3 font-bold text-white transition;
+  background: linear-gradient(180deg, var(--orange-2), var(--orange));
+  box-shadow: 0 4px 16px rgba(255, 138, 61, 0.4);
 }
 .btn-primary:hover { filter: brightness(1.08); transform: translateY(-1px); }
+
+.btn-cyan {
+  @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-3 font-bold text-white transition;
+  background: linear-gradient(180deg, var(--cyan-2), var(--cyan));
+  box-shadow: 0 4px 16px rgba(79, 195, 247, 0.4);
+}
+.btn-cyan:hover { filter: brightness(1.08); transform: translateY(-1px); }
 
 .btn-secondary {
   @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-3 font-semibold transition;
@@ -44,7 +66,7 @@ html, body {
 .btn-secondary:hover { background: rgba(255, 255, 255, 0.1); }
 
 .card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(180deg, rgba(79, 195, 247, 0.04), rgba(255, 138, 61, 0.02));
   border: 1px solid var(--border);
   border-radius: 12px;
 }
@@ -54,7 +76,7 @@ html, body {
 }
 
 .rtp-cell-hot { color: #3df58b; font-weight: 700; }
-.rtp-cell-warm { color: var(--gold); font-weight: 600; }
+.rtp-cell-warm { color: var(--orange); font-weight: 600; }
 .rtp-cell-cold { color: #ff6b7a; }
 
 @keyframes marqueeUp {

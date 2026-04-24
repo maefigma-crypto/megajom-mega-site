@@ -25,7 +25,7 @@ export default function WithdrawalProof() {
           <span className="gold-text">Withdrawal Proof</span> — Bukti Bayar
         </h2>
         <p className="mt-2 text-sm text-[color:var(--text-dim)]">
-          Real withdrawals, real bank transfers, real approval times. Average payout speed today: under 4 minutes.
+          Real withdrawals, real bank transfers, real approval times. Typical payout: 5-30 minutes. Max processing never exceeds 30 min.
         </p>
       </div>
 

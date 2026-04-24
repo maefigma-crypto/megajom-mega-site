@@ -30,7 +30,11 @@ const breadcrumbSchema = {
 export default function TipsPage() {
   const games = allGames();
   const gamesByKey: Record<string, (typeof games)[number]> = {};
-  for (const g of games) gamesByKey[g.id] = g;
+  const gamesByBrand: Record<string, typeof games> = { mega888: [], kiss918: [], pussy888: [] };
+  for (const g of games) {
+    gamesByKey[g.id] = g;
+    if (gamesByBrand[g.brand]) gamesByBrand[g.brand].push(g);
+  }
 
   const todayNumber = new Date().getDate();
 
@@ -62,6 +66,7 @@ export default function TipsPage() {
           <TipsSearch
             tips={dailyTips}
             gamesByKey={gamesByKey}
+            gamesByBrand={gamesByBrand}
             todayNumber={todayNumber}
           />
         </div>

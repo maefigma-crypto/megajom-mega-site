@@ -12,11 +12,13 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-[color:var(--border)] bg-[color:var(--bg)]/85 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2 text-xl font-black">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-b from-yellow-300 to-yellow-500 text-black">
-            M
-          </span>
-          <span className="gold-text">MEGAJOM</span>
+        <Link href="/" className="flex items-center" aria-label="MEGAJOM Home">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logos/logo.png"
+            alt="MEGAJOM"
+            className="h-12 w-auto md:h-14"
+          />
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">

@@ -1,0 +1,62 @@
+name: Telegram Auto-Posting
+
+on:
+  schedule:
+    # All cron times UTC. Malaysia = UTC+8.
+    # Bukti Cuci — 12am, 6am, 12pm, 6pm MYT
+    - cron: '0 16,22 * * *'
+    - cron: '0 4,10 * * *'
+    # Game Tips — 3am, 9am, 3pm, 9pm MYT
+    - cron: '0 19,1 * * *'
+    - cron: '0 7,13 * * *'
+    # Withdrawal Proof — 2am, 8am, 2pm, 8pm MYT
+    - cron: '0 18,0 * * *'
+    - cron: '0 6,12 * * *'
+
+  workflow_dispatch:
+    inputs:
+      post_type:
+        description: 'Which post to send now'
+        required: true
+        default: 'bukti-cuci'
+        type: choice
+        options:
+          - bukti-cuci
+          - game-tips
+          - withdrawal-proof
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Decide script
+        id: decide
+        shell: bash
+        env:
+          MANUAL_INPUT: ${{ github.event.inputs.post_type }}
+          CRON: ${{ github.event.schedule }}
+        run: |
+          if [ -n "$MANUAL_INPUT" ]; then
+            echo "script=post-${MANUAL_INPUT}.mjs" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          case "$CRON" in
+            "0 16,22 * * *"|"0 4,10 * * *") echo "script=post-bukti-cuci.mjs" >> "$GITHUB_OUTPUT" ;;
+            "0 19,1 * * *"|"0 7,13 * * *")  echo "script=post-game-tips.mjs" >> "$GITHUB_OUTPUT" ;;
+            "0 18,0 * * *"|"0 6,12 * * *")  echo "script=post-withdrawal-proof.mjs" >> "$GITHUB_OUTPUT" ;;
+            *)                                echo "script=post-bukti-cuci.mjs" >> "$GITHUB_OUTPUT" ;;
+          esac
+
+      - name: Send Telegram post
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          MONEY_SITE_URL: ${{ secrets.MONEY_SITE_URL }}
+          GAME_TIPS_URL: ${{ secrets.GAME_TIPS_URL }}
+        run: node scripts/telegram/${{ steps.decide.outputs.script }}

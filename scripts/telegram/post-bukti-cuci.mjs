@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Bukti Cuci — matches user's MEGAJOM template format exactly.
 
-import { loadJson, sendMarkdownPhotoPost, fmtRM, md } from './_helpers.mjs';
+import { loadJson, sendMarkdownPhotoPost, fmtRM, md, nextIndex } from './_helpers.mjs';
 
 const BRAND_LABEL = {
   mega888: 'Mega888',
@@ -11,10 +11,7 @@ const BRAND_LABEL = {
 
 function pickEntry() {
   const entries = loadJson('data/bukti-cuci.json');
-  const d = new Date();
-  const slot = Math.floor(d.getUTCHours() / 6);
-  const idx = (d.getUTCDate() * 4 + slot) % entries.length;
-  return entries[idx];
+  return entries[nextIndex('bukti-cuci', entries.length)];
 }
 
 function buildCaption(entry, game) {

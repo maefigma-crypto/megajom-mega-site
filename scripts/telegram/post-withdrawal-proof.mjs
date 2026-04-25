@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Withdrawal Proof — matches user's MEGAJOM template format.
 
-import { loadJson, sendMarkdownPhotoPost, md } from './_helpers.mjs';
+import { loadJson, sendMarkdownPhotoPost, md, nextIndex } from './_helpers.mjs';
 
 const BRAND_LABEL = {
   mega888: 'Mega888',
@@ -11,10 +11,7 @@ const BRAND_LABEL = {
 
 function pickEntry() {
   const entries = loadJson('data/withdrawal-proof.json');
-  const d = new Date();
-  const slot = Math.floor(d.getUTCHours() / 6);
-  const idx = (d.getUTCDate() * 4 + slot) % entries.length;
-  return entries[idx];
+  return entries[nextIndex('withdrawal-proof', entries.length)];
 }
 
 function fmtRM(n) {

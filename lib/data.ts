@@ -66,9 +66,17 @@ export type WithdrawalProof = {
 
 export const withdrawals = withdrawalJson as WithdrawalProof[];
 
+// Rotates 4× per day (every 6h MYT) so a daily site rebuild at 2/8/14/20 MYT
+// shows fresh cards. Uses build-time `Date.now()`; cards are static between rebuilds.
+function sixHourSlotIndex(): number {
+  const d = new Date();
+  const day = d.getUTCDate();
+  const slot = Math.floor(d.getUTCHours() / 6);
+  return day * 4 + slot;
+}
+
 export function todayBukti(count = 3): BuktiEntry[] {
-  const day = new Date().getDate();
-  const start = ((day - 1) * count) % buktiCuci.length;
+  const start = (sixHourSlotIndex() * count) % buktiCuci.length;
   const out: BuktiEntry[] = [];
   for (let i = 0; i < count; i++) {
     out.push(buktiCuci[(start + i) % buktiCuci.length]);
@@ -77,8 +85,7 @@ export function todayBukti(count = 3): BuktiEntry[] {
 }
 
 export function todayWithdrawals(count = 3): WithdrawalProof[] {
-  const day = new Date().getDate();
-  const start = ((day - 1) * count) % withdrawals.length;
+  const start = (sixHourSlotIndex() * count) % withdrawals.length;
   const out: WithdrawalProof[] = [];
   for (let i = 0; i < count; i++) {
     out.push(withdrawals[(start + i) % withdrawals.length]);

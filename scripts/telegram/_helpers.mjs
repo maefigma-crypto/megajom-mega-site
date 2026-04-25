@@ -78,3 +78,21 @@ export function fmtRM(n) {
 export function loadJson(rel) {
   return JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
 }
+
+// Persistent rotating counter to prevent duplicate posts when cron fires
+// twice within the same time window. Each call advances by 1 (mod size).
+// Counter file lives in <ROOT>/state/<name>.json — survives across runs as long
+// as the runner's working tree persists (droplet ✓, ephemeral CI ✗).
+export function nextIndex(name, size) {
+  const stateDir = path.join(ROOT, 'state');
+  fs.mkdirSync(stateDir, { recursive: true });
+  const file = path.join(stateDir, `${name}.json`);
+  let prev = -1;
+  try {
+    prev = JSON.parse(fs.readFileSync(file, 'utf8')).idx;
+    if (typeof prev !== 'number' || !Number.isFinite(prev)) prev = -1;
+  } catch {}
+  const next = ((prev + 1) % size + size) % size;
+  fs.writeFileSync(file, JSON.stringify({ idx: next, ts: new Date().toISOString() }));
+  return next;
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Game Tips — matches user's MEGAJOM template format.
-// 6 random slot games (2 per brand). First picked game = Top Pick (image + spotlight).
+// Game Tips — dynamic MEGAJOM post with no RTP shown in Telegram captions.
+// Picks 6 random slot games (2 per brand). First picked game = spotlight image.
 
 import { loadJson, sendMarkdownPhotoPost, md } from './_helpers.mjs';
 
@@ -11,6 +11,31 @@ const BRAND_LABEL = {
 };
 
 const KEYCAPS = { mega888: '1️⃣', kiss918: '2️⃣', pussy888: '3️⃣' };
+
+const BRAND_TIPS = {
+  mega888: [
+    'Mula kecil dulu, tunggu bonus masuk baru naik step',
+    'Kalau line belum ngam, tukar game sebelum modal panas',
+    'Ambil win kecil pun cantik kalau target sudah sampai',
+  ],
+  kiss918: [
+    'Cari game yang anda biasa main supaya keputusan lebih terkawal',
+    'Jangan spam bet besar, naik perlahan bila flow mula jalan',
+    'Rehat sekejap kalau sudah beberapa spin kosong',
+  ],
+  pussy888: [
+    'Main ikut bajet, bukan ikut emosi',
+    'Lock profit awal kalau sudah kena bonus cantik',
+    'Pilih game yang ringan dulu sebelum masuk sesi panjang',
+  ],
+};
+
+const CLOSING_TIPS = [
+  'Target sampai, terus simpan profit dulu',
+  'Sesi pendek pun boleh jadi cantik bila timing tepat',
+  'Main tenang, jaga modal, baru senang cari peluang seterusnya',
+  'Kalau flow belum masuk, pause dulu dan sambung bila kepala steady',
+];
 
 function pickRandomGames() {
   const games = loadJson('data/games.json');
@@ -23,32 +48,37 @@ function pickRandomGames() {
   return out;
 }
 
+function pickOne(items) {
+  return items[Math.floor(Math.random() * items.length)];
+}
+
 function buildCaption(picks, topGame, topBrand) {
   const lines = [
     `🤖 *MEGAJOM*`,
     ``,
-    `🔥 *GAME TIPS — HOT PICKS HARI INI*`,
+    `🎯 *GAME TIPS HARI INI*`,
     ``,
-    `🎯 *Top pick hari ini:* 🔥${md(BRAND_LABEL[topBrand])}`,
-    `⭐️ *${md(topGame.name_en)}* — RTP ${md(topGame.rtp_base.toFixed(1))}%`,
+    `🔥 *Top pick:* ${md(BRAND_LABEL[topBrand])}`,
+    `⭐️ *${md(topGame.name_en)}*`,
+    `💡 ${md(pickOne(BRAND_TIPS[topBrand]))}`,
     ``,
-    `💡 *Mega888 · 918Kiss · Pussy888 Tips*`,
-    ``,
-    `6 permainan terkini:`,
+    `🎮 *Pilihan game untuk sesi sekarang*`,
     ``,
   ];
 
   for (const brand of ['mega888', 'kiss918', 'pussy888']) {
     lines.push(`${KEYCAPS[brand]} *${BRAND_LABEL[brand]}*`);
     for (const g of picks[brand]) {
-      const rtp = md(g.rtp_base.toFixed(1));
-      lines.push(`🔥 ${md(g.name_en)} — RTP ${rtp}%`);
+      lines.push(`🔥 ${md(g.name_en)}`);
     }
+    lines.push(`💡 ${md(pickOne(BRAND_TIPS[brand]))}`);
     lines.push('');
   }
 
   lines.push(
-    `🏆 Pilih RTP tinggi \\+ strategi betul untuk maksimumkan cuci harian anda\\.`,
+    `✅ ${md(pickOne(CLOSING_TIPS))}`,
+    ``,
+    `🚀 *Jom main dengan plan, bukan main hentam*`,
   );
 
   return lines.join('\n');
@@ -59,8 +89,7 @@ async function main() {
   const featured = [...picks.mega888, ...picks.kiss918, ...picks.pussy888];
   if (featured.length === 0) throw new Error('No slot games found');
 
-  // Top pick = highest RTP among the 6
-  const top = [...featured].sort((a, b) => b.rtp_base - a.rtp_base)[0];
+  const top = featured[Math.floor(Math.random() * featured.length)];
   const topBrand = ['mega888', 'kiss918', 'pussy888'].find((b) =>
     picks[b].some((g) => g.id === top.id),
   );

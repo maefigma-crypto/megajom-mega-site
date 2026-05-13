@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Withdrawal Proof — matches user's MEGAJOM template format.
+// Withdrawal Proof — MEGAJOM post with rotating status/trust lines for variety.
 
 import { loadJson, sendMarkdownPhotoPost, md, nextIndex } from './_helpers.mjs';
 
@@ -8,6 +8,20 @@ const BRAND_LABEL = {
   kiss918: '918Kiss',
   pussy888: 'Pussy888',
 };
+
+const STATUS_LINES = [
+  'Cashout sudah selesai',
+  'Withdrawal berjaya diproses',
+  'Cashout update terbaru',
+  'Approved dan masuk queue pembayaran',
+];
+
+const TRUST_LINES = [
+  'Proses jelas, member senang follow',
+  'Menang sudah sampai target, terus withdraw',
+  'MegaJOM update cashout supaya member boleh semak',
+  'Cashout laju bila detail semua lengkap',
+];
 
 function pickEntry() {
   const entries = loadJson('data/withdrawal-proof.json');
@@ -31,13 +45,20 @@ function pickHeaderImage(brand) {
   return pool[Math.floor(Math.random() * pool.length)].image;
 }
 
+function pickOne(items, seed) {
+  return items[Math.abs(seed) % items.length];
+}
+
 function buildCaption(entry) {
   const brand = BRAND_LABEL[entry.brand] ?? entry.brand;
+  const seed = entry.amount + entry.duration_seconds;
 
   return [
     `🤖 *MEGAJOM*`,
     ``,
-    `🟢 *WITHDRAWAL PROOF — APPROVED* ✅`,
+    `🟢 *WITHDRAWAL UPDATED* ✅`,
+    ``,
+    `✅ ${md(pickOne(STATUS_LINES, seed))}`,
     ``,
     `👑 *Member:* \`${md(entry.member)}\``,
     `🏦 *Bank:* ${md(entry.bank)}`,
@@ -49,7 +70,8 @@ function buildCaption(entry) {
     `✅ *Approved:* ${md(entry.approval_time)}`,
     `⚡️ *Processing Time:* ${md(fmtDuration(entry.duration_seconds))}`,
     ``,
-    `🚨 Jom Menang, Jom Mega \\!`,
+    `💬 ${md(pickOne(TRUST_LINES, seed + 5))}`,
+    `🚀 *Jom Menang, Jom Mega*`,
   ].join('\n');
 }
 

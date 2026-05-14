@@ -2,6 +2,7 @@
 // Game Tips — simple MEGAJOM template: header + date + 2 random RTP96+ games per brand.
 
 import { loadJson, sendMarkdownPhotoPost, md } from './_helpers.mjs';
+import { composeGameTipsImage } from './_image-compose.mjs';
 
 const BRAND_LABEL = {
   mega888: 'MEGA888',
@@ -64,12 +65,20 @@ async function main() {
   if (featured.length === 0) throw new Error('No slot games found');
 
   const headerGame = featured[Math.floor(Math.random() * featured.length)];
+  const headerBrand = BRAND_ORDER.find((b) => picks[b].some((g) => g.id === headerGame.id));
   const caption = buildCaption(picks);
+
+  const imageBuffer = await composeGameTipsImage({
+    brand: headerBrand,
+    gameImagePath: headerGame.image,
+  });
+
   const result = await sendMarkdownPhotoPost({
-    imagePath: headerGame.image,
+    imageBuffer,
+    filename: `game-tips-${headerBrand}-${headerGame.id}.jpg`,
     caption,
   });
-  console.log(`✅ Posted game-tips #${result.message_id} — header image: ${headerGame.name_en}`);
+  console.log(`✅ Posted game-tips #${result.message_id} — featured: ${headerGame.name_en} (${headerBrand})`);
 }
 
 main().catch((err) => {

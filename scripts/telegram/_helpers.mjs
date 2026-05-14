@@ -51,15 +51,22 @@ function resolveImage(imagePath) {
   return candidates.find((p) => fs.existsSync(p));
 }
 
-export async function sendMarkdownPhotoPost({ imagePath, caption }) {
+export async function sendMarkdownPhotoPost({ imagePath, imageBuffer, caption, filename }) {
   if (!TG.token) throw new Error('TELEGRAM_BOT_TOKEN not set');
   const channelIds = getChannelIds();
   if (!channelIds.length) throw new Error('TELEGRAM_CHANNEL_ID(S) not set');
 
-  const abs = resolveImage(imagePath);
-  if (!abs) throw new Error(`Image not found: ${imagePath}`);
-
-  const buf = fs.readFileSync(abs);
+  let buf;
+  let name;
+  if (imageBuffer) {
+    buf = imageBuffer;
+    name = filename ?? 'photo.jpg';
+  } else {
+    const abs = resolveImage(imagePath);
+    if (!abs) throw new Error(`Image not found: ${imagePath}`);
+    buf = fs.readFileSync(abs);
+    name = path.basename(abs);
+  }
   const replyMarkup = JSON.stringify(standardButtons());
 
   let firstResult = null;
@@ -70,7 +77,7 @@ export async function sendMarkdownPhotoPost({ imagePath, caption }) {
     form.append('caption', caption);
     form.append('parse_mode', 'MarkdownV2');
     form.append('reply_markup', replyMarkup);
-    form.append('photo', new Blob([buf], { type: 'image/png' }), path.basename(abs));
+    form.append('photo', new Blob([buf], { type: 'image/jpeg' }), name);
 
     const res = await fetch(`https://api.telegram.org/bot${TG.token}/sendPhoto`, {
       method: 'POST',

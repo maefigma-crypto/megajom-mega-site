@@ -2,7 +2,7 @@
 // Bukti Cuci — uses withdrawal-proof data + same simple template as withdrawal-proof.
 // Separate rotation counter so it iterates the data pool independently.
 
-import { loadJson, sendMarkdownPhotoPost, fmtRM, md, nextIndex } from './_helpers.mjs';
+import { loadJson, sendMarkdownPhotoPost, fmtRM, md, nextIndex, shortBank } from './_helpers.mjs';
 
 const BRAND_LABEL = {
   mega888: 'Mega888',
@@ -36,7 +36,7 @@ function buildCaption(entry) {
     ``,
     `✅ *CUCI tanpa RAGU*`,
     ``,
-    `🏦 *Bank:* ${md(entry.bank)}`,
+    `🏦 *Bank:* ${md(shortBank(entry.bank))}`,
     `💎 *Game:* ${md(brand)}`,
     ``,
     `💰 *Amount:* ${md(fmtRM(entry.amount))}`,
@@ -54,7 +54,7 @@ async function main() {
   const imagePath = pickHeaderImage(entry.brand);
   const caption = buildCaption(entry);
   const result = await sendMarkdownPhotoPost({ imagePath, caption });
-  console.log(`✅ Posted bukti-cuci #${result.message_id} — ${fmtRM(entry.amount)} via ${entry.bank}`);
+  console.log(`✅ Posted bukti-cuci #${result.message_id} — ${fmtRM(entry.amount)} via ${shortBank(entry.bank)}`);
 }
 
 main().catch((err) => {

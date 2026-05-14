@@ -16,6 +16,11 @@ export const TG = {
   chatId: process.env.TELEGRAM_CHANNEL_ID,
 };
 
+function getChannelIds() {
+  const list = process.env.TELEGRAM_CHANNEL_IDS ?? process.env.TELEGRAM_CHANNEL_ID ?? '';
+  return list.split(',').map((s) => s.trim()).filter(Boolean);
+}
+
 export const CTA = {
   moneySite: process.env.MONEY_SITE_URL ?? 'https://megajom.net',
   gameTips: process.env.GAME_TIPS_URL ?? 'https://megajom-mega-site.pages.dev/tips/',
@@ -48,31 +53,77 @@ function resolveImage(imagePath) {
 
 export async function sendMarkdownPhotoPost({ imagePath, caption }) {
   if (!TG.token) throw new Error('TELEGRAM_BOT_TOKEN not set');
-  if (!TG.chatId) throw new Error('TELEGRAM_CHANNEL_ID not set');
+  const channelIds = getChannelIds();
+  if (!channelIds.length) throw new Error('TELEGRAM_CHANNEL_ID(S) not set');
 
   const abs = resolveImage(imagePath);
   if (!abs) throw new Error(`Image not found: ${imagePath}`);
 
-  const form = new FormData();
-  form.append('chat_id', String(TG.chatId));
-  form.append('caption', caption);
-  form.append('parse_mode', 'MarkdownV2');
-  form.append('reply_markup', JSON.stringify(standardButtons()));
-
   const buf = fs.readFileSync(abs);
-  form.append('photo', new Blob([buf], { type: 'image/png' }), path.basename(abs));
+  const replyMarkup = JSON.stringify(standardButtons());
 
-  const res = await fetch(`https://api.telegram.org/bot${TG.token}/sendPhoto`, {
-    method: 'POST',
-    body: form,
-  });
-  const json = await res.json();
-  if (!json.ok) throw new Error(`sendPhoto failed: ${json.description}`);
-  return json.result;
+  let firstResult = null;
+  const failures = [];
+  for (const chatId of channelIds) {
+    const form = new FormData();
+    form.append('chat_id', chatId);
+    form.append('caption', caption);
+    form.append('parse_mode', 'MarkdownV2');
+    form.append('reply_markup', replyMarkup);
+    form.append('photo', new Blob([buf], { type: 'image/png' }), path.basename(abs));
+
+    const res = await fetch(`https://api.telegram.org/bot${TG.token}/sendPhoto`, {
+      method: 'POST',
+      body: form,
+    });
+    const json = await res.json();
+    if (!json.ok) {
+      failures.push(`${chatId}: ${json.description}`);
+      console.error(`❌ sendPhoto to ${chatId} failed: ${json.description}`);
+      continue;
+    }
+    if (!firstResult) firstResult = json.result;
+    console.log(`  → sent to ${chatId} (msg #${json.result.message_id})`);
+  }
+
+  if (!firstResult) throw new Error(`All channels failed: ${failures.join('; ')}`);
+  return firstResult;
 }
 
 export function fmtRM(n) {
   return `RM ${n.toLocaleString('en-MY')}`;
+}
+
+const BANK_SHORT = {
+  'Maybank': 'MBB',
+  'CIMB': 'CIMB',
+  'Hong Leong Bank': 'HLB',
+  'Hong Leong': 'HLB',
+  'Public Bank': 'PBB',
+  'Affin Bank': 'AFFIN',
+  'Affin': 'AFFIN',
+  "Touch 'n Go": 'TnG',
+  'Touch n Go': 'TnG',
+  'TnG': 'TnG',
+  'Boost': 'Boost',
+  'RHB': 'RHB',
+  'AmBank': 'AmBank',
+  'Bank Islam': 'BIMB',
+  'BIMB': 'BIMB',
+  'BSN': 'BSN',
+  'Agrobank': 'Agro',
+  'Agro': 'Agro',
+  'Citibank': 'Citi',
+  'Citi': 'Citi',
+  'HSBC': 'HSBC',
+  'OCBC': 'OCBC',
+  'Bank Rakyat': 'Rakyat',
+  'Rakyat': 'Rakyat',
+  'UOB': 'UOB',
+};
+
+export function shortBank(name) {
+  return BANK_SHORT[name] ?? name;
 }
 
 export function loadJson(rel) {
